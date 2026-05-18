@@ -16,9 +16,41 @@ import CtaSection from '@/components/sections/CtaSection'
 import Contact from '@/components/sections/Contact'
 import Footer from '@/components/Footer'
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'LaunchGrids',
+  url: 'https://launchgrids.in',
+  logo: 'https://launchgrids.in/logo.png',
+  description: 'Complete digital business setup agency in India. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce, and growth systems.',
+  email: 'hello@launchgrids.in',
+  areaServed: 'IN',
+  priceRange: '₹₹',
+  serviceType: [
+    'Website Development',
+    'Branding',
+    'SEO',
+    'Digital Marketing',
+    'Ecommerce Development',
+    'WhatsApp Automation',
+    'Chatbot Setup',
+    'Google Ads',
+    'Meta Ads',
+    'Content Writing',
+  ],
+  sameAs: [
+    'https://launchgrids.in',
+  ],
+}
+
 export default function Home() {
   return (
-    <main className="bg-white dark:bg-[#0C0A1E] transition-colors duration-300">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="bg-white dark:bg-[#0C0A1E] transition-colors duration-300">
       <Navbar />
       <Hero />
       <Problem />
@@ -36,6 +68,7 @@ export default function Home() {
       <CtaSection />
       <Contact />
       <Footer />
-    </main>
+      </main>
+    </>
   )
 }
