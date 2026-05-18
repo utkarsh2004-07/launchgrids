@@ -245,10 +245,11 @@ Msg: ${form.message.slice(0,100) || '-'}`
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                  <label htmlFor="businessType" className="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1.5">
                     Business Type <span className="text-red-500">*</span>
                   </label>
                   <select
+                    id="businessType"
                     name="businessType"
                     value={form.businessType}
                     onChange={handleChange}
@@ -285,10 +286,11 @@ Msg: ${form.message.slice(0,100) || '-'}`
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                  <label htmlFor="budget" className="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1.5">
                     Budget Range <span className="text-red-500">*</span>
                   </label>
                   <select
+                    id="budget"
                     name="budget"
                     value={form.budget}
                     onChange={handleChange}
