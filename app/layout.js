@@ -125,7 +125,7 @@ export const metadata = {
     images: ['/logo.png'],
   },
   verification: {
-    google: '',
+    google: 'google7715039671d69eb3',
   },
 }
 
