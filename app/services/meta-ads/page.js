@@ -1,4 +1,3 @@
-'use client'
 import ServicePageLayout from '@/components/ServicePageLayout'
 import { Facebook, Target, BarChart3, Eye, TrendingUp, Users } from 'lucide-react'
 
