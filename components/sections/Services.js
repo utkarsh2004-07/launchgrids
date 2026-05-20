@@ -4,8 +4,8 @@ import { useScrollReveal } from '@/hooks/useScrollReveal'
 import {
   Globe, ShoppingCart, Layers, Palette, Megaphone, Search,
   MapPin, Instagram, Video, FileText, MessageCircle, Bot,
-  BarChart3, Code2, Smartphone, Box, PenTool, Mail, Star,
-  Settings, Zap, TrendingUp, Shield, Users, Layout, Funnel,
+  BarChart3, Code2, Smartphone, Box, PenTool, Star,
+  Settings, Zap, TrendingUp, Shield, Users, Layout,
   Chrome, Facebook, Eye
 } from 'lucide-react'
 
@@ -101,7 +101,7 @@ export default function Services() {
         </div>
 
         {/* Services grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {filtered.map((s, i) => {
             const c = colorMap[s.color]
             return (
