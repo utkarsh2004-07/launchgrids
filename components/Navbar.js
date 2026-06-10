@@ -54,6 +54,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [dark, setDark] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
 
   useEffect(() => {
     const saved = localStorage.getItem('theme')
@@ -76,7 +77,10 @@ export default function Navbar() {
     }
   }
 
-  const handleNavClick = () => setMenuOpen(false)
+  const handleNavClick = () => {
+    setMenuOpen(false)
+    setServicesOpen(false)
+  }
 
   return (
     <header
@@ -172,24 +176,36 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden transition-all duration-300 overflow-hidden ${
-          menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden fixed top-16 left-0 right-0 bottom-0 z-40 transition-all duration-300 ${
+          menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        <div className="bg-white dark:bg-[#12103A] border-t border-gray-100 dark:border-white/5 px-4 py-4 space-y-1">
+        <div className="h-full overflow-y-auto bg-white dark:bg-[#12103A] border-t border-gray-100 dark:border-white/5 px-4 py-4 space-y-1 pb-24">
           {navLinks.map((link) => (
             <div key={link.href}>
-              <Link href={link.href} onClick={handleNavClick} className="block px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-blue dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-white/5 rounded-lg transition-all">
-                {link.label}
-              </Link>
-              {link.dropdown && (
-                <div className="pl-4 space-y-1">
-                  {link.dropdown.map(item => (
-                    <Link key={item.href} href={item.href} onClick={handleNavClick} className="block px-4 py-2 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-blue-400 rounded-lg transition-all">
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
+              {link.dropdown ? (
+                <>
+                  <button
+                    onClick={() => setServicesOpen(!servicesOpen)}
+                    className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-blue dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-white/5 rounded-lg transition-all"
+                  >
+                    {link.label}
+                    <ChevronDown size={14} className={`transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {servicesOpen && (
+                    <div className="pl-4 space-y-1 mt-1">
+                      {link.dropdown.map(item => (
+                        <Link key={item.href} href={item.href} onClick={handleNavClick} className="block px-4 py-2 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-blue-400 rounded-lg transition-all">
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <Link href={link.href} onClick={handleNavClick} className="block px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-blue dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-white/5 rounded-lg transition-all">
+                  {link.label}
+                </Link>
               )}
             </div>
           ))}
