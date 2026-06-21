@@ -5,7 +5,49 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const relatedServices = [
+  { name: 'Website Development', href: '/services/website-development', category: 'Web & Tech' },
+  { name: 'Ecommerce Website', href: '/services/ecommerce-website', category: 'Web & Tech' },
+  { name: 'Landing Page Design', href: '/services/landing-page', category: 'Web & Tech' },
+  { name: 'SEO', href: '/services/seo', category: 'Marketing' },
+  { name: 'Digital Marketing', href: '/services/digital-marketing', category: 'Marketing' },
+  { name: 'Google Ads', href: '/services/google-ads', category: 'Marketing' },
+  { name: 'Meta Ads', href: '/services/meta-ads', category: 'Marketing' },
+  { name: 'Lead Generation', href: '/services/lead-generation', category: 'Marketing' },
+  { name: 'Google Business Profile', href: '/services/google-business-profile', category: 'Marketing' },
+  { name: 'Branding', href: '/services/branding', category: 'Branding & Design' },
+  { name: 'Logo Design', href: '/services/logo-design', category: 'Branding & Design' },
+  { name: 'Graphic Design', href: '/services/graphic-design', category: 'Branding & Design' },
+  { name: 'WhatsApp Automation', href: '/services/whatsapp-automation', category: 'Automation' },
+  { name: 'CRM Setup', href: '/services/crm-setup', category: 'Automation' },
+  { name: 'Chatbot Setup', href: '/services/chatbot-setup', category: 'Automation' },
+  { name: 'Content Writing', href: '/services/content-writing', category: 'Content' },
+  { name: 'Social Media Management', href: '/services/social-media-management', category: 'Content' },
+]
+
 export default function ServicePageLayout({ service }) {
+  const related = relatedServices
+    .filter((item) => item.name !== service.name)
+    .sort((a, b) => {
+      if (a.category === service.category && b.category !== service.category) return -1
+      if (b.category === service.category && a.category !== service.category) return 1
+      return a.name.localeCompare(b.name)
+    })
+    .slice(0, 6)
+
+  const faqSchema = service.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: service.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.a,
+      },
+    })),
+  } : null
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add('revealed')),
@@ -17,6 +59,12 @@ export default function ServicePageLayout({ service }) {
 
   return (
     <>
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <Navbar />
       <main className="bg-white dark:bg-[#0C0A1E]">
 
@@ -147,6 +195,36 @@ export default function ServicePageLayout({ service }) {
           </div>
         </section>
 
+        {/* Related Services */}
+        <section className="section-padding bg-white dark:bg-[#0C0A1E]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-10 reveal">
+              <div className="badge badge-blue mb-4 mx-auto inline-flex">Related Services</div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight" style={{ fontFamily: 'Syne, sans-serif' }}>
+                Build a Complete <span className="gradient-text">Growth System</span>
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400">
+                Pair {service.name} with the right digital services to improve search visibility, conversion rate, and lead quality.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {related.map((item, i) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`reveal reveal-delay-${Math.min(i + 1, 6)} card-base bg-white dark:bg-[#12103A] p-5 group`}
+                >
+                  <div className="text-xs font-bold uppercase tracking-wider text-brand-blue mb-2">{item.category}</div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-2" style={{ fontFamily: 'Syne, sans-serif' }}>{item.name}</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Explore how {item.name.toLowerCase()} supports your {service.name.toLowerCase()} goals.
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Pricing CTA */}
         <section className="py-20 relative overflow-hidden bg-gradient-to-br from-[#0C0A1E] via-[#1a1650] to-[#0C0A1E]">
           <div className="orb w-[400px] h-[400px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-600/20 opacity-60 pointer-events-none" />
@@ -163,7 +241,7 @@ export default function ServicePageLayout({ service }) {
                 View Packages
               </Link>
             </div>
-            <p className="mt-6 text-white/30 text-sm">Starting from ₹25,000 · Free consultation · Response within 24 hours</p>
+            <p className="mt-6 text-white/30 text-sm">Starting from Rs.25,000  -  Free consultation  -  Response within 24 hours</p>
           </div>
         </section>
 

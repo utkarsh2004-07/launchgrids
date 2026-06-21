@@ -3,13 +3,13 @@ import { Facebook, Target, BarChart3, Eye, TrendingUp, Users } from 'lucide-reac
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Meta Ads Agency in India — Facebook & Instagram Advertising | LaunchGrids',
-  description: 'Expert Meta Ads management for businesses in India. Facebook and Instagram advertising with precise audience targeting, creative design, retargeting, and campaign optimization. Starting from ₹5,000/month.',
+  title: 'Meta Ads Agency in India - Facebook & Instagram Advertising | LaunchGrids',
+  description: 'Expert Meta Ads management for businesses in India. Facebook and Instagram advertising with precise audience targeting, creative design, retargeting, and campaign optimization. Starting from Rs.5,000/month.',
   keywords: ['Meta Ads agency India', 'Facebook Ads India', 'Instagram Ads India', 'Facebook advertising India', 'Meta advertising India', 'social media ads India', 'Facebook Ads management India', 'Instagram advertising agency India', 'Meta Ads expert India', 'Facebook lead ads India'],
   alternates: { canonical: 'https://launchgrids.in/services/meta-ads' },
   openGraph: {
-    title: 'Meta Ads Agency in India — Facebook & Instagram Advertising | LaunchGrids',
-    description: 'Expert Facebook and Instagram advertising with audience targeting and creative design. Starting from ₹5,000/month.',
+    title: 'Meta Ads Agency in India - Facebook & Instagram Advertising | LaunchGrids',
+    description: 'Expert Facebook and Instagram advertising with audience targeting and creative design. Starting from Rs.5,000/month.',
     url: 'https://launchgrids.in/services/meta-ads',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Meta Ads Agency in India | LaunchGrids',
-    description: 'Expert Facebook and Instagram advertising. Starting from ₹5,000/month.',
+    description: 'Expert Facebook and Instagram advertising. Starting from Rs.5,000/month.',
     images: ['/logo.png'],
   },
 }
@@ -57,7 +57,7 @@ const service = {
     { value: '400M+', label: 'Meta Users India' },
     { value: '3x', label: 'Average ROAS' },
     { value: '48hr', label: 'Campaign Launch' },
-    { value: '₹5', label: 'Min Cost Per Click' },
+    { value: 'Rs.5', label: 'Min Cost Per Click' },
   ],
   offerDesc: 'Complete Meta Ads management from strategy to creative to optimization.',
   offerings: [
@@ -74,10 +74,10 @@ const service = {
     { title: 'Launch', desc: 'We set up campaigns with proper targeting and launch.' },
     { title: 'Optimize', desc: 'We monitor daily and optimize for better results and lower costs.' },
   ],
-  whyDesc: 'Meta Ads allow you to reach highly specific audiences at scale — perfect for brand awareness and lead generation.',
-  benefits: ['Reach 400M+ users in India', 'Precise audience targeting', 'Ad creatives included', 'Retargeting for higher conversions', 'Lead ads for easy lead capture', 'Daily monitoring and optimization', 'Transparent monthly reporting', 'Management from ₹5,000/month'],
+  whyDesc: 'Meta Ads allow you to reach highly specific audiences at scale - perfect for brand awareness and lead generation.',
+  benefits: ['Reach 400M+ users in India', 'Precise audience targeting', 'Ad creatives included', 'Retargeting for higher conversions', 'Lead ads for easy lead capture', 'Daily monitoring and optimization', 'Transparent monthly reporting', 'Management from Rs.5,000/month'],
   faqs: [
-    { q: 'How much should I spend on Meta Ads?', a: 'We recommend a minimum ad budget of ₹5,000-10,000/month. Our management fee starts from ₹5,000/month.' },
+    { q: 'How much should I spend on Meta Ads?', a: 'We recommend a minimum ad budget of Rs.5,000-10,000/month. Our management fee starts from Rs.5,000/month.' },
     { q: 'Do you create the ad creatives?', a: 'Yes, ad creative design is included in our Meta Ads management service.' },
     { q: 'How quickly will I see results?', a: 'Meta Ads typically show results within 3-7 days as the algorithm learns your audience.' },
     { q: 'Can you run ads for local businesses?', a: 'Yes, we run location-targeted ads for local businesses to reach customers in specific cities or areas.' },

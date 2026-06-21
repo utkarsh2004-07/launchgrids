@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 import {
   Globe, ShoppingCart, Layers, Palette, Megaphone, Search,
@@ -12,41 +13,41 @@ import {
 const categories = ['All', 'Web & Tech', 'Branding & Design', 'Marketing', 'Automation', 'Content']
 
 const services = [
-  { icon: <Globe className="w-5 h-5" />, title: 'Website Development', desc: 'Professional, responsive, fast-loading websites for businesses, startups, and service providers.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <ShoppingCart className="w-5 h-5" />, title: 'Ecommerce Website Design', desc: 'Online stores with product pages, cart, payment gateway, order management, and conversion-focused design.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <Code2 className="w-5 h-5" />, title: 'Custom Software Development', desc: 'Business dashboards, CRM systems, booking systems, internal tools, and custom web applications.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <Layers className="w-5 h-5" />, title: 'UI/UX Design', desc: 'Clean and user-friendly designs for websites, apps, dashboards, and digital platforms.', cat: 'Branding & Design', color: 'violet' },
-  { icon: <Palette className="w-5 h-5" />, title: 'Branding', desc: 'Brand identity, color palette, typography, logo direction, brand guidelines, and visual presentation.', cat: 'Branding & Design', color: 'violet' },
-  { icon: <PenTool className="w-5 h-5" />, title: 'Logo Design', desc: 'Professional logo concepts, brand mark design, and complete logo package for your business.', cat: 'Branding & Design', color: 'violet' },
-  { icon: <Settings className="w-5 h-5" />, title: 'Domain & Hosting Setup', desc: 'Complete domain registration, hosting configuration, SSL setup, and website deployment.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <Megaphone className="w-5 h-5" />, title: 'Digital Marketing', desc: 'Online growth through social media, ads, SEO, content, and lead generation systems.', cat: 'Marketing', color: 'orange' },
-  { icon: <Search className="w-5 h-5" />, title: 'SEO', desc: 'Search engine optimization to help businesses rank better on Google and get organic traffic.', cat: 'Marketing', color: 'orange' },
-  { icon: <MapPin className="w-5 h-5" />, title: 'Google Business Profile Setup', desc: 'Setup and optimization for local businesses to appear on Google Search and Maps.', cat: 'Marketing', color: 'orange' },
-  { icon: <Instagram className="w-5 h-5" />, title: 'Instagram Page Setup', desc: 'Professional Instagram profile setup, bio optimization, highlights, and initial page strategy.', cat: 'Content', color: 'pink' },
-  { icon: <Eye className="w-5 h-5" />, title: 'Instagram Post Design', desc: 'Branded post creatives, carousel designs, promotional content, and consistent visual templates.', cat: 'Content', color: 'pink' },
-  { icon: <Video className="w-5 h-5" />, title: 'Reels Editing', desc: 'Short-form video editing for Instagram reels, brand storytelling, and promotional clips.', cat: 'Content', color: 'pink' },
-  { icon: <Video className="w-5 h-5" />, title: 'Video Editing', desc: 'Reels, ad videos, brand videos, explainer videos, and short-form content editing.', cat: 'Content', color: 'pink' },
-  { icon: <FileText className="w-5 h-5" />, title: 'Content Writing', desc: 'Website content, service pages, captions, blogs, product descriptions, and marketing copy.', cat: 'Content', color: 'pink' },
-  { icon: <MessageCircle className="w-5 h-5" />, title: 'WhatsApp Business Setup', desc: 'WhatsApp Business account setup, catalog, quick replies, and professional communication setup.', cat: 'Automation', color: 'green' },
-  { icon: <Zap className="w-5 h-5" />, title: 'WhatsApp Business Automation', desc: 'Automated replies, lead handling, catalog setup, and customer communication flow via WhatsApp.', cat: 'Automation', color: 'green' },
-  { icon: <Bot className="w-5 h-5" />, title: 'Chatbot Setup', desc: 'Basic chatbot for website or WhatsApp to answer customer queries and collect leads automatically.', cat: 'Automation', color: 'green' },
-  { icon: <BarChart3 className="w-5 h-5" />, title: 'Analytics Setup', desc: 'Google Analytics, Search Console, Meta Pixel, conversion tracking, and performance reports.', cat: 'Marketing', color: 'orange' },
-  { icon: <Chrome className="w-5 h-5" />, title: 'Google Search Console Setup', desc: 'Complete GSC setup, sitemap submission, indexing monitoring, and search performance tracking.', cat: 'Marketing', color: 'orange' },
-  { icon: <Facebook className="w-5 h-5" />, title: 'Meta Pixel Setup', desc: 'Facebook/Instagram pixel installation, event tracking, custom audiences, and retargeting setup.', cat: 'Marketing', color: 'orange' },
-  { icon: <Users className="w-5 h-5" />, title: 'CRM Setup', desc: 'Customer relationship management system setup to manage leads, contacts, and sales pipeline.', cat: 'Automation', color: 'green' },
-  { icon: <TrendingUp className="w-5 h-5" />, title: 'Lead Generation', desc: 'Complete lead generation system with landing pages, forms, ads, and follow-up automation.', cat: 'Marketing', color: 'orange' },
-  { icon: <Layout className="w-5 h-5" />, title: 'Landing Page Design', desc: 'High-converting landing pages for products, services, events, courses, and lead capture.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <TrendingUp className="w-5 h-5" />, title: 'Sales Funnel Design', desc: 'Complete sales funnel from awareness to conversion with landing pages, emails, and automation.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <Search className="w-5 h-5" />, title: 'Google Ads Setup', desc: 'Google Search, Display, and Shopping ads setup with keyword research, targeting, and tracking.', cat: 'Marketing', color: 'orange' },
-  { icon: <Facebook className="w-5 h-5" />, title: 'Meta Ads Setup', desc: 'Facebook and Instagram advertising setup with audience targeting, creatives, and campaign optimization.', cat: 'Marketing', color: 'orange' },
-  { icon: <Instagram className="w-5 h-5" />, title: 'Social Media Management', desc: 'Monthly social media content planning, posting, engagement, and account growth management.', cat: 'Content', color: 'pink' },
-  { icon: <Shield className="w-5 h-5" />, title: 'Online Reputation Management', desc: 'Brand monitoring, negative review handling, positive PR, and online reputation building.', cat: 'Marketing', color: 'orange' },
-  { icon: <Star className="w-5 h-5" />, title: 'Review Management', desc: 'Google and platform review monitoring, response strategy, and review generation campaigns.', cat: 'Marketing', color: 'orange' },
-  { icon: <Settings className="w-5 h-5" />, title: 'Website Maintenance', desc: 'Regular website updates, security checks, backups, content changes, and technical support.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <Zap className="w-5 h-5" />, title: 'Speed Optimization', desc: 'Core Web Vitals improvement, image optimization, caching, and performance enhancement.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <Smartphone className="w-5 h-5" />, title: 'App Development', desc: 'Mobile application development for Android and iOS for business use cases and customer engagement.', cat: 'Web & Tech', color: 'blue' },
-  { icon: <Box className="w-5 h-5" />, title: '3D Modeling', desc: 'Product visualization, architectural rendering, and 3D graphics for digital and marketing use.', cat: 'Branding & Design', color: 'violet' },
-  { icon: <Palette className="w-5 h-5" />, title: 'Graphic Design', desc: 'Banners, brochures, business cards, presentations, social creatives, and marketing collateral.', cat: 'Branding & Design', color: 'violet' },
+  { icon: <Globe className="w-5 h-5" />, title: 'Website Development', href: '/services/website-development', desc: 'Professional, responsive, fast-loading websites for businesses, startups, and service providers.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <ShoppingCart className="w-5 h-5" />, title: 'Ecommerce Website Design', href: '/services/ecommerce-website', desc: 'Online stores with product pages, cart, payment gateway, order management, and conversion-focused design.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <Code2 className="w-5 h-5" />, title: 'Custom Software Development', href: '/services/custom-software', desc: 'Business dashboards, CRM systems, booking systems, internal tools, and custom web applications.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <Layers className="w-5 h-5" />, title: 'UI/UX Design', href: '/services/ui-ux-design', desc: 'Clean and user-friendly designs for websites, apps, dashboards, and digital platforms.', cat: 'Branding & Design', color: 'violet' },
+  { icon: <Palette className="w-5 h-5" />, title: 'Branding', href: '/services/branding', desc: 'Brand identity, color palette, typography, logo direction, brand guidelines, and visual presentation.', cat: 'Branding & Design', color: 'violet' },
+  { icon: <PenTool className="w-5 h-5" />, title: 'Logo Design', href: '/services/logo-design', desc: 'Professional logo concepts, brand mark design, and complete logo package for your business.', cat: 'Branding & Design', color: 'violet' },
+  { icon: <Settings className="w-5 h-5" />, title: 'Domain & Hosting Setup', href: '/services/domain-hosting', desc: 'Complete domain registration, hosting configuration, SSL setup, and website deployment.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <Megaphone className="w-5 h-5" />, title: 'Digital Marketing', href: '/services/digital-marketing', desc: 'Online growth through social media, ads, SEO, content, and lead generation systems.', cat: 'Marketing', color: 'orange' },
+  { icon: <Search className="w-5 h-5" />, title: 'SEO', href: '/services/seo', desc: 'Search engine optimization to help businesses rank better on Google and get organic traffic.', cat: 'Marketing', color: 'orange' },
+  { icon: <MapPin className="w-5 h-5" />, title: 'Google Business Profile Setup', href: '/services/google-business-profile', desc: 'Setup and optimization for local businesses to appear on Google Search and Maps.', cat: 'Marketing', color: 'orange' },
+  { icon: <Instagram className="w-5 h-5" />, title: 'Instagram Page Setup', href: '/services/instagram-setup', desc: 'Professional Instagram profile setup, bio optimization, highlights, and initial page strategy.', cat: 'Content', color: 'pink' },
+  { icon: <Eye className="w-5 h-5" />, title: 'Instagram Post Design', href: '/services/instagram-post-design', desc: 'Branded post creatives, carousel designs, promotional content, and consistent visual templates.', cat: 'Content', color: 'pink' },
+  { icon: <Video className="w-5 h-5" />, title: 'Reels Editing', href: '/services/reels-editing', desc: 'Short-form video editing for Instagram reels, brand storytelling, and promotional clips.', cat: 'Content', color: 'pink' },
+  { icon: <Video className="w-5 h-5" />, title: 'Video Editing', href: '/services/video-editing', desc: 'Reels, ad videos, brand videos, explainer videos, and short-form content editing.', cat: 'Content', color: 'pink' },
+  { icon: <FileText className="w-5 h-5" />, title: 'Content Writing', href: '/services/content-writing', desc: 'Website content, service pages, captions, blogs, product descriptions, and marketing copy.', cat: 'Content', color: 'pink' },
+  { icon: <MessageCircle className="w-5 h-5" />, title: 'WhatsApp Business Setup', href: '/services/whatsapp-business-setup', desc: 'WhatsApp Business account setup, catalog, quick replies, and professional communication setup.', cat: 'Automation', color: 'green' },
+  { icon: <Zap className="w-5 h-5" />, title: 'WhatsApp Business Automation', href: '/services/whatsapp-automation', desc: 'Automated replies, lead handling, catalog setup, and customer communication flow via WhatsApp.', cat: 'Automation', color: 'green' },
+  { icon: <Bot className="w-5 h-5" />, title: 'Chatbot Setup', href: '/services/chatbot-setup', desc: 'Basic chatbot for website or WhatsApp to answer customer queries and collect leads automatically.', cat: 'Automation', color: 'green' },
+  { icon: <BarChart3 className="w-5 h-5" />, title: 'Analytics Setup', href: '/services/analytics-setup', desc: 'Google Analytics, Search Console, Meta Pixel, conversion tracking, and performance reports.', cat: 'Marketing', color: 'orange' },
+  { icon: <Chrome className="w-5 h-5" />, title: 'Google Search Console Setup', href: '/services/analytics-setup', desc: 'Complete GSC setup, sitemap submission, indexing monitoring, and search performance tracking.', cat: 'Marketing', color: 'orange' },
+  { icon: <Facebook className="w-5 h-5" />, title: 'Meta Pixel Setup', href: '/services/analytics-setup', desc: 'Facebook/Instagram pixel installation, event tracking, custom audiences, and retargeting setup.', cat: 'Marketing', color: 'orange' },
+  { icon: <Users className="w-5 h-5" />, title: 'CRM Setup', href: '/services/crm-setup', desc: 'Customer relationship management system setup to manage leads, contacts, and sales pipeline.', cat: 'Automation', color: 'green' },
+  { icon: <TrendingUp className="w-5 h-5" />, title: 'Lead Generation', href: '/services/lead-generation', desc: 'Complete lead generation system with landing pages, forms, ads, and follow-up automation.', cat: 'Marketing', color: 'orange' },
+  { icon: <Layout className="w-5 h-5" />, title: 'Landing Page Design', href: '/services/landing-page', desc: 'High-converting landing pages for products, services, events, courses, and lead capture.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <TrendingUp className="w-5 h-5" />, title: 'Sales Funnel Design', href: '/services/sales-funnel', desc: 'Complete sales funnel from awareness to conversion with landing pages, emails, and automation.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <Search className="w-5 h-5" />, title: 'Google Ads Setup', href: '/services/google-ads', desc: 'Google Search, Display, and Shopping ads setup with keyword research, targeting, and tracking.', cat: 'Marketing', color: 'orange' },
+  { icon: <Facebook className="w-5 h-5" />, title: 'Meta Ads Setup', href: '/services/meta-ads', desc: 'Facebook and Instagram advertising setup with audience targeting, creatives, and campaign optimization.', cat: 'Marketing', color: 'orange' },
+  { icon: <Instagram className="w-5 h-5" />, title: 'Social Media Management', href: '/services/social-media-management', desc: 'Monthly social media content planning, posting, engagement, and account growth management.', cat: 'Content', color: 'pink' },
+  { icon: <Shield className="w-5 h-5" />, title: 'Online Reputation Management', href: '/services/reputation-management', desc: 'Brand monitoring, negative review handling, positive PR, and online reputation building.', cat: 'Marketing', color: 'orange' },
+  { icon: <Star className="w-5 h-5" />, title: 'Review Management', href: '/services/review-management', desc: 'Google and platform review monitoring, response strategy, and review generation campaigns.', cat: 'Marketing', color: 'orange' },
+  { icon: <Settings className="w-5 h-5" />, title: 'Website Maintenance', href: '/services/website-maintenance', desc: 'Regular website updates, security checks, backups, content changes, and technical support.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <Zap className="w-5 h-5" />, title: 'Speed Optimization', href: '/services/speed-optimization', desc: 'Core Web Vitals improvement, image optimization, caching, and performance enhancement.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <Smartphone className="w-5 h-5" />, title: 'App Development', href: '/services/app-development', desc: 'Mobile application development for Android and iOS for business use cases and customer engagement.', cat: 'Web & Tech', color: 'blue' },
+  { icon: <Box className="w-5 h-5" />, title: '3D Modeling', href: '/services/3d-modeling', desc: 'Product visualization, architectural rendering, and 3D graphics for digital and marketing use.', cat: 'Branding & Design', color: 'violet' },
+  { icon: <Palette className="w-5 h-5" />, title: 'Graphic Design', href: '/services/graphic-design', desc: 'Banners, brochures, business cards, presentations, social creatives, and marketing collateral.', cat: 'Branding & Design', color: 'violet' },
 ]
 
 const colorMap = {
@@ -57,9 +58,10 @@ const colorMap = {
   green: { bg: 'bg-green-50 dark:bg-green-950/20', icon: 'text-green-600 dark:text-green-400', border: 'border-green-100 dark:border-green-900/20' },
 }
 
-export default function Services() {
+export default function Services({ headingLevel = 'h2' }) {
   useScrollReveal()
   const [activeCategory, setActiveCategory] = useState('All')
+  const Heading = headingLevel === 'h1' ? 'h1' : 'h2'
 
   const filtered = activeCategory === 'All'
     ? services
@@ -71,15 +73,15 @@ export default function Services() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 reveal">
           <div className="badge badge-blue mb-4 mx-auto inline-flex">35+ Services</div>
-          <h2
+          <Heading
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white mb-5 tracking-tight"
             style={{ fontFamily: 'Syne, sans-serif' }}
           >
             Complete Service{' '}
             <span className="gradient-text">Portfolio</span>
-          </h2>
+          </Heading>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            From website to automation — every service your business needs to grow online, in one place.
+            From website to automation - every service your business needs to grow online, in one place.
           </p>
         </div>
 
@@ -105,8 +107,9 @@ export default function Services() {
           {filtered.map((s, i) => {
             const c = colorMap[s.color]
             return (
-              <div
+              <Link
                 key={s.title}
+                href={s.href}
                 className="card-base bg-white dark:bg-[#12103A] p-5 group"
               >
                 <div className={`w-10 h-10 rounded-xl ${c.bg} border ${c.border} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300`}>
@@ -124,15 +127,15 @@ export default function Services() {
                     {s.cat}
                   </span>
                 </div>
-              </div>
+              </Link>
             )
           })}
         </div>
 
         <div className="text-center mt-10 reveal">
-          <a href="#contact" className="btn-primary mx-auto inline-flex">
+          <Link href="/contact" className="btn-primary mx-auto inline-flex">
             Discuss Your Requirements
-          </a>
+          </Link>
         </div>
       </div>
     </section>

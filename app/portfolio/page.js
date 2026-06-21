@@ -5,7 +5,7 @@ import CtaSection from '@/components/sections/CtaSection'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Our Projects & Portfolio — Websites Built by LaunchGrids',
+  title: 'Our Projects & Portfolio - Websites Built by LaunchGrids',
   description: 'View LaunchGrids portfolio of websites, ecommerce stores, and digital projects built for clients across India. See our work including corporate websites, online stores, and custom software.',
   keywords: ['LaunchGrids portfolio', 'website projects India', 'digital agency portfolio India', 'websites built by LaunchGrids', 'ecommerce projects India', 'LaunchGrids work', 'digital agency case studies India'],
   alternates: { canonical: 'https://launchgrids.in/portfolio' },
@@ -23,9 +23,64 @@ export const metadata = {
   },
 }
 
+const portfolioSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'LaunchGrids Projects and Portfolio',
+  url: 'https://launchgrids.in/portfolio',
+  description: 'A portfolio of websites, ecommerce stores, agency pages, and custom software built by LaunchGrids.',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'CreativeWork',
+          name: 'Elecom India Corporate Website',
+          url: 'https://elecomindia.com',
+          about: 'Corporate website design and development.',
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        item: {
+          '@type': 'CreativeWork',
+          name: 'Diaasa Ecommerce Store',
+          url: 'https://diaasa.com',
+          about: 'Ecommerce website with product listings and shopping flow.',
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        item: {
+          '@type': 'SoftwareApplication',
+          name: 'LiftDisplay v1.0',
+          applicationCategory: 'BusinessApplication',
+          operatingSystem: 'Windows, Linux',
+          about: 'Elevator LCD display software with RS-232 serial integration, video playback, and monitoring.',
+        },
+      },
+    ],
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://launchgrids.in' },
+    { '@type': 'ListItem', position: 2, name: 'Portfolio', item: 'https://launchgrids.in/portfolio' },
+  ],
+}
+
 export default function PortfolioPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Navbar />
       <main className="bg-white dark:bg-[#0C0A1E] pt-24">
         <Portfolio />

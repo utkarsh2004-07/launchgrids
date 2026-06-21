@@ -3,13 +3,13 @@ import { TrendingUp, Layout, Target, Users, Zap, BarChart3 } from 'lucide-react'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Lead Generation Agency in India — Get More Leads | LaunchGrids',
-  description: 'Complete lead generation services for businesses in India. Landing pages, Google Ads, Meta Ads, lead capture forms, and automated follow-up systems to generate consistent qualified leads. Starting from ₹15,000.',
+  title: 'Lead Generation Agency in India - Get More Leads | LaunchGrids',
+  description: 'Complete lead generation services for businesses in India. Landing pages, Google Ads, Meta Ads, lead capture forms, and automated follow-up systems to generate consistent qualified leads. Starting from Rs.15,000.',
   keywords: ['lead generation agency India', 'lead generation for small business India', 'B2B lead generation India', 'online lead generation India', 'lead generation system India', 'lead generation service India', 'qualified leads India', 'lead generation for real estate India'],
   alternates: { canonical: 'https://launchgrids.in/services/lead-generation' },
   openGraph: {
-    title: 'Lead Generation Agency in India — Get More Leads | LaunchGrids',
-    description: 'Complete lead generation system with landing pages, ads, and automated follow-ups. Starting from ₹15,000.',
+    title: 'Lead Generation Agency in India - Get More Leads | LaunchGrids',
+    description: 'Complete lead generation system with landing pages, ads, and automated follow-ups. Starting from Rs.15,000.',
     url: 'https://launchgrids.in/services/lead-generation',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Lead Generation Agency in India | LaunchGrids',
-    description: 'Complete lead generation system with landing pages, ads, and automated follow-ups. Starting from ₹15,000.',
+    description: 'Complete lead generation system with landing pages, ads, and automated follow-ups. Starting from Rs.15,000.',
     images: ['/logo.png'],
   },
 }
@@ -52,7 +52,7 @@ const service = {
   iconColor: 'text-orange-600 dark:text-orange-400',
   heroTitle: 'Generate Consistent Leads with',
   heroHighlight: 'Lead Generation System',
-  heroDesc: 'We build complete lead generation systems — landing pages, ads, forms, and automated follow-ups — that bring you a steady stream of qualified leads every month.',
+  heroDesc: 'We build complete lead generation systems - landing pages, ads, forms, and automated follow-ups - that bring you a steady stream of qualified leads every month.',
   heroPoints: ['Landing Pages', 'Paid Ads', 'Lead Capture Forms', 'Follow-up Automation'],
   stats: [
     { value: '1200+', label: 'Leads Generated' },
@@ -76,12 +76,12 @@ const service = {
     { title: 'Optimize', desc: 'We optimize campaigns to reduce cost per lead and increase quality.' },
   ],
   whyDesc: 'A systematic lead generation process gives you predictable, consistent business growth every month.',
-  benefits: ['Consistent monthly lead flow', 'Qualified leads from targeted campaigns', 'Automated follow-up so no lead is missed', 'Complete tracking of lead sources', 'Landing pages optimized for conversions', 'Works for any business type', 'Transparent reporting', 'Starting from ₹15,000'],
+  benefits: ['Consistent monthly lead flow', 'Qualified leads from targeted campaigns', 'Automated follow-up so no lead is missed', 'Complete tracking of lead sources', 'Landing pages optimized for conversions', 'Works for any business type', 'Transparent reporting', 'Starting from Rs.15,000'],
   faqs: [
     { q: 'How many leads can I expect?', a: 'Lead volume depends on your budget, industry, and competition. We focus on quality leads that convert.' },
-    { q: 'How much does lead generation cost?', a: 'Setup starts from ₹15,000. Monthly management starts from ₹8,000 plus ad budget.' },
+    { q: 'How much does lead generation cost?', a: 'Setup starts from Rs.15,000. Monthly management starts from Rs.8,000 plus ad budget.' },
     { q: 'How quickly will leads start coming?', a: 'Paid ad campaigns can generate leads within 48-72 hours of launch.' },
-    { q: 'What industries do you generate leads for?', a: 'We generate leads for all industries — real estate, education, healthcare, services, ecommerce, and more.' },
+    { q: 'What industries do you generate leads for?', a: 'We generate leads for all industries - real estate, education, healthcare, services, ecommerce, and more.' },
   ],
   ctaDesc: 'Build a lead generation system that brings you consistent, qualified leads every month.',
 }

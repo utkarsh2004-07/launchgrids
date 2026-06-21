@@ -3,13 +3,13 @@ import { FileText, PenTool, Globe, Instagram, Search, MessageCircle, BookOpen, T
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Content Writing Agency in India — SEO Content & Copywriting | LaunchGrids',
-  description: 'LaunchGrids provides professional content writing services in India. Website content, SEO blogs, social media captions, product descriptions, and marketing copy that converts. Starting from ₹5,000.',
+  title: 'Content Writing Agency in India - SEO Content & Copywriting | LaunchGrids',
+  description: 'LaunchGrids provides professional content writing services in India. Website content, SEO blogs, social media captions, product descriptions, and marketing copy that converts. Starting from Rs.5,000.',
   keywords: ['content writing agency India', 'SEO content writing India', 'website content writing India', 'blog writing agency India', 'copywriting agency India', 'social media content India', 'product description writing India'],
   alternates: { canonical: 'https://launchgrids.in/services/content-writing' },
   openGraph: {
     title: 'Content Writing Agency in India | LaunchGrids',
-    description: 'Professional SEO content writing for websites, blogs, and social media. Starting from ₹5,000.',
+    description: 'Professional SEO content writing for websites, blogs, and social media. Starting from Rs.5,000.',
     url: 'https://launchgrids.in/services/content-writing',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Content Writing Agency in India | LaunchGrids',
-    description: 'Professional SEO content writing for websites, blogs, and social media. Starting from ₹5,000.',
+    description: 'Professional SEO content writing for websites, blogs, and social media. Starting from Rs.5,000.',
     images: ['/logo.png'],
   },
 }
@@ -59,7 +59,7 @@ const service = {
     { value: '3x', label: 'More Organic Traffic' },
     { value: '48hr', label: 'Delivery Time' },
   ],
-  offerDesc: 'Complete content writing services — from website copy to SEO blogs, everything your business needs to communicate effectively.',
+  offerDesc: 'Complete content writing services - from website copy to SEO blogs, everything your business needs to communicate effectively.',
   offerings: [
     { icon: <Globe className="w-6 h-6" />, title: 'Website Content Writing', desc: 'Home page, about us, service pages, and landing page copy that clearly communicates your value proposition.' },
     { icon: <BookOpen className="w-6 h-6" />, title: 'SEO Blog Writing', desc: 'Keyword-optimized blog articles that rank on Google and drive consistent organic traffic to your website.' },
@@ -79,14 +79,14 @@ const service = {
     '100% original, plagiarism-free content',
     'SEO-optimized with proper keyword integration',
     'Written in your brand\'s tone and voice',
-    'Fast delivery — most content within 48 hours',
+    'Fast delivery - most content within 48 hours',
     'Unlimited revisions until you\'re satisfied',
     'Research-backed content with accurate information',
     'Formatted for readability with proper headings',
-    'Affordable pricing starting from ₹500 per article',
+    'Affordable pricing starting from Rs.500 per article',
   ],
   faqs: [
-    { q: 'How much does content writing cost?', a: 'Blog articles start from ₹500 per article. Website content packages start from ₹5,000. Pricing depends on word count and complexity.' },
+    { q: 'How much does content writing cost?', a: 'Blog articles start from Rs.500 per article. Website content packages start from Rs.5,000. Pricing depends on word count and complexity.' },
     { q: 'Is the content SEO optimized?', a: 'Yes, all content is written with target keywords, proper heading structure, meta descriptions, and SEO best practices.' },
     { q: 'How long does it take to deliver content?', a: 'Standard articles (800-1200 words) are delivered within 48 hours. Longer content or bulk orders may take 3-5 days.' },
     { q: 'Can you write in Hindi as well?', a: 'Yes, we provide content writing in both English and Hindi for businesses targeting Indian audiences.' },

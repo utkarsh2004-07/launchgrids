@@ -31,7 +31,7 @@ export default function CtaSection() {
         </h2>
 
         <p className="text-lg text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Get a complete digital setup plan for your business — website, branding, marketing, automation, and growth systems — all from one agency.
+          Get a complete digital setup plan for your business - website, branding, marketing, automation, and growth systems - all from one agency.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center">
@@ -53,7 +53,7 @@ export default function CtaSection() {
 
         {/* Trust line */}
         <p className="mt-8 text-white/30 text-sm">
-          "From idea to online launch — we handle the complete digital setup."
+          "From idea to online launch - we handle the complete digital setup."
         </p>
       </div>
     </section>

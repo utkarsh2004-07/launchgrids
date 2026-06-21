@@ -3,13 +3,13 @@ import { MessageCircle, Bot, Zap, Users, Bell, Settings, TrendingUp, Shield } fr
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'WhatsApp Automation Agency in India — Business Chatbot Setup | LaunchGrids',
-  description: 'LaunchGrids sets up WhatsApp Business automation for Indian businesses. Automated replies, lead capture, catalog setup, chatbot integration, and customer communication flows. Starting from ₹10,000.',
+  title: 'WhatsApp Automation Agency in India - Business Chatbot Setup | LaunchGrids',
+  description: 'LaunchGrids sets up WhatsApp Business automation for Indian businesses. Automated replies, lead capture, catalog setup, chatbot integration, and customer communication flows. Starting from Rs.10,000.',
   keywords: ['WhatsApp automation agency India', 'WhatsApp Business setup India', 'WhatsApp chatbot India', 'business automation India', 'WhatsApp marketing India', 'automated WhatsApp replies India', 'WhatsApp Business API India'],
   alternates: { canonical: 'https://launchgrids.in/services/whatsapp-automation' },
   openGraph: {
     title: 'WhatsApp Automation Agency in India | LaunchGrids',
-    description: 'Automate your WhatsApp Business with chatbots, auto-replies, and lead capture. Starting from ₹10,000.',
+    description: 'Automate your WhatsApp Business with chatbots, auto-replies, and lead capture. Starting from Rs.10,000.',
     url: 'https://launchgrids.in/services/whatsapp-automation',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'WhatsApp Automation Agency in India | LaunchGrids',
-    description: 'Automate your WhatsApp Business with chatbots, auto-replies, and lead capture. Starting from ₹10,000.',
+    description: 'Automate your WhatsApp Business with chatbots, auto-replies, and lead capture. Starting from Rs.10,000.',
     images: ['/logo.png'],
   },
 }
@@ -74,10 +74,10 @@ const service = {
     { title: 'Automation Build', desc: 'We build chatbot flows, automated replies, and lead capture sequences.' },
     { title: 'Testing & Launch', desc: 'We test all automation flows and train your team on managing the system.' },
   ],
-  whyDesc: 'WhatsApp automation saves time, captures more leads, and provides instant customer support — all automatically.',
+  whyDesc: 'WhatsApp automation saves time, captures more leads, and provides instant customer support - all automatically.',
   benefits: [
-    'Respond to customers instantly — 24/7 automated replies',
-    'Never miss a lead — automated capture and follow-up',
+    'Respond to customers instantly - 24/7 automated replies',
+    'Never miss a lead - automated capture and follow-up',
     'Professional WhatsApp Business profile setup',
     'Product catalog setup for easy browsing',
     'Broadcast messages to your entire customer list',
@@ -87,7 +87,7 @@ const service = {
   ],
   faqs: [
     { q: 'What is WhatsApp Business automation?', a: 'WhatsApp Business automation uses chatbots and automated flows to respond to customers, capture leads, and send messages automatically without manual effort.' },
-    { q: 'How much does WhatsApp automation cost?', a: 'WhatsApp Business setup starts from ₹5,000. Full automation with chatbot starts from ₹10,000.' },
+    { q: 'How much does WhatsApp automation cost?', a: 'WhatsApp Business setup starts from Rs.5,000. Full automation with chatbot starts from Rs.10,000.' },
     { q: 'Do I need WhatsApp Business API?', a: 'For basic automation, WhatsApp Business app is sufficient. For advanced automation and bulk messaging, WhatsApp Business API is recommended.' },
     { q: 'Can I still reply manually after automation?', a: 'Yes, automation handles routine queries automatically. You can always take over and reply manually for complex conversations.' },
   ],

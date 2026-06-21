@@ -3,13 +3,13 @@ import { PenTool, Layers, Eye, FileText, Star, Palette } from 'lucide-react'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Logo Design Agency in India — Professional Logo Design | LaunchGrids',
-  description: 'Professional logo design services in India. Get a unique, memorable logo for your business with 3 concepts, unlimited revisions, and all file formats — PNG, SVG, PDF, AI. Starting from ₹8,000.',
+  title: 'Logo Design Agency in India - Professional Logo Design | LaunchGrids',
+  description: 'Professional logo design services in India. Get a unique, memorable logo for your business with 3 concepts, unlimited revisions, and all file formats - PNG, SVG, PDF, AI. Starting from Rs.8,000.',
   keywords: ['logo design India', 'logo design agency India', 'professional logo design India', 'business logo design India', 'affordable logo design India', 'custom logo design India', 'startup logo design India', 'brand logo India'],
   alternates: { canonical: 'https://launchgrids.in/services/logo-design' },
   openGraph: {
-    title: 'Logo Design Agency in India — Professional Logo Design | LaunchGrids',
-    description: 'Unique, memorable logo design with 3 concepts, unlimited revisions, and all file formats. Starting from ₹8,000.',
+    title: 'Logo Design Agency in India - Professional Logo Design | LaunchGrids',
+    description: 'Unique, memorable logo design with 3 concepts, unlimited revisions, and all file formats. Starting from Rs.8,000.',
     url: 'https://launchgrids.in/services/logo-design',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Logo Design Agency in India | LaunchGrids',
-    description: 'Unique logo design with 3 concepts and unlimited revisions. Starting from ₹8,000.',
+    description: 'Unique logo design with 3 concepts and unlimited revisions. Starting from Rs.8,000.',
     images: ['/logo.png'],
   },
 }
@@ -64,7 +64,7 @@ const service = {
   offerings: [
     { icon: <PenTool className="w-6 h-6" />, title: '3 Logo Concepts', desc: 'Three unique logo directions to choose from, each with different visual style.' },
     { icon: <Layers className="w-6 h-6" />, title: 'Multiple Variations', desc: 'Primary, horizontal, stacked, icon-only, and monochrome versions of your logo.' },
-    { icon: <FileText className="w-6 h-6" />, title: 'All File Formats', desc: 'PNG, SVG, PDF, AI — print-ready and digital formats for all use cases.' },
+    { icon: <FileText className="w-6 h-6" />, title: 'All File Formats', desc: 'PNG, SVG, PDF, AI - print-ready and digital formats for all use cases.' },
     { icon: <Palette className="w-6 h-6" />, title: 'Color Variations', desc: 'Full color, black, white, and transparent background versions.' },
     { icon: <Star className="w-6 h-6" />, title: 'Brand Color Palette', desc: 'Primary and secondary brand colors with hex codes for consistent usage.' },
     { icon: <Eye className="w-6 h-6" />, title: 'Usage Guidelines', desc: 'Basic brand guidelines on how to use your logo correctly across platforms.' },
@@ -76,9 +76,9 @@ const service = {
     { title: 'Final Delivery', desc: 'We deliver all files in every format along with color codes.' },
   ],
   whyDesc: 'A great logo builds instant brand recognition and trust. We create logos that are simple, memorable, and versatile.',
-  benefits: ['3 unique concepts to choose from', '100% original custom design', 'All formats — PNG, SVG, PDF, AI', 'Transparent background versions', 'Print and digital ready', 'Unlimited revisions', 'Fast 5-7 day delivery', 'Starting from ₹8,000'],
+  benefits: ['3 unique concepts to choose from', '100% original custom design', 'All formats - PNG, SVG, PDF, AI', 'Transparent background versions', 'Print and digital ready', 'Unlimited revisions', 'Fast 5-7 day delivery', 'Starting from Rs.8,000'],
   faqs: [
-    { q: 'How much does logo design cost?', a: 'Logo design starts from ₹8,000. Complete brand identity with guidelines starts from ₹15,000.' },
+    { q: 'How much does logo design cost?', a: 'Logo design starts from Rs.8,000. Complete brand identity with guidelines starts from Rs.15,000.' },
     { q: 'How many revisions do I get?', a: 'We offer unlimited revisions until you are completely satisfied with the final logo.' },
     { q: 'What if I don\'t like any of the 3 concepts?', a: 'We will create additional concepts based on your feedback at no extra charge.' },
     { q: 'Can I use the logo for print materials?', a: 'Yes, all logos are delivered in print-ready formats suitable for business cards, banners, and all print materials.' },

@@ -6,7 +6,7 @@ const reasons = [
   {
     icon: <Layers className="w-5 h-5" />,
     title: 'Complete Business Setup in One Place',
-    desc: 'Website, branding, marketing, automation, and analytics — all from a single expert team.',
+    desc: 'Website, branding, marketing, automation, and analytics - all from a single expert team.',
     color: 'blue',
   },
   {
@@ -24,13 +24,13 @@ const reasons = [
   {
     icon: <IndianRupee className="w-5 h-5" />,
     title: 'Affordable Packages for All Businesses',
-    desc: 'From ₹25,000 local business setups to ₹10L+ enterprise projects — pricing for every stage.',
+    desc: 'From Rs.25,000 local business setups to Rs.10L+ enterprise projects - pricing for every stage.',
     color: 'green',
   },
   {
     icon: <Expand className="w-5 h-5" />,
     title: 'Scalable Solutions for Growth',
-    desc: 'Start small and scale up. Our solutions grow with your business — from local to national.',
+    desc: 'Start small and scale up. Our solutions grow with your business - from local to national.',
     color: 'orange',
   },
   {
@@ -42,7 +42,7 @@ const reasons = [
   {
     icon: <TrendingUp className="w-5 h-5" />,
     title: 'Website + Branding + Marketing + Automation',
-    desc: 'Four pillars of online business success — all handled by LaunchGrids in one project.',
+    desc: 'Four pillars of online business success - all handled by LaunchGrids in one project.',
     color: 'blue',
   },
   {
@@ -78,7 +78,7 @@ export default function WhyUs() {
             <span className="gradient-text">LaunchGrids</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Built for small businesses, startups, ecommerce brands, and service providers — we're the only digital partner you'll ever need.
+            Built for small businesses, startups, ecommerce brands, and service providers - we're the only digital partner you'll ever need.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import { Zap } from 'lucide-react'
 
 export const metadata = {
-  title: 'Privacy Policy — LaunchGrids',
+  title: 'Privacy Policy - LaunchGrids',
   description: 'Privacy Policy for LaunchGrids Digital Agency',
 }
 
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
         </Section>
 
         <Section title="5. Data Security">
-          <p>We take reasonable measures to protect your information. All communications are handled securely. We do not store sensitive payment information — all payments are processed through trusted third-party payment gateways.</p>
+          <p>We take reasonable measures to protect your information. All communications are handled securely. We do not store sensitive payment information - all payments are processed through trusted third-party payment gateways.</p>
         </Section>
 
         <Section title="6. Cookies">
@@ -71,10 +71,10 @@ export default function PrivacyPolicy() {
         <Section title="7. Third-Party Services">
           <p>We may use the following third-party services:</p>
           <ul>
-            <li>Google Analytics — website traffic analysis</li>
-            <li>Google Ads / Meta Ads — for our own marketing</li>
-            <li>WhatsApp Business — client communication</li>
-            <li>Cloudflare — website hosting and security</li>
+            <li>Google Analytics - website traffic analysis</li>
+            <li>Google Ads / Meta Ads - for our own marketing</li>
+            <li>WhatsApp Business - client communication</li>
+            <li>Cloudflare - website hosting and security</li>
           </ul>
           <p>Each of these services has their own privacy policies which govern their use of your data.</p>
         </Section>

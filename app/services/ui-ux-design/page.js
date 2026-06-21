@@ -3,13 +3,13 @@ import { Layers, Smartphone, Eye, Code2, PenTool, Zap } from 'lucide-react'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'UI/UX Design Agency in India — Website & App Design | LaunchGrids',
-  description: 'LaunchGrids provides professional UI/UX design services in India. Clean, user-friendly designs for websites, apps, dashboards, and digital platforms. Figma source files included. Starting from ₹15,000.',
+  title: 'UI/UX Design Agency in India - Website & App Design | LaunchGrids',
+  description: 'LaunchGrids provides professional UI/UX design services in India. Clean, user-friendly designs for websites, apps, dashboards, and digital platforms. Figma source files included. Starting from Rs.15,000.',
   keywords: ['UI UX design agency India', 'website UI design India', 'app UX design India', 'user interface design India', 'user experience design India', 'Figma design India', 'web design agency India', 'app design India', 'dashboard design India'],
   alternates: { canonical: 'https://launchgrids.in/services/ui-ux-design' },
   openGraph: {
-    title: 'UI/UX Design Agency in India — Website & App Design | LaunchGrids',
-    description: 'Clean, user-friendly UI/UX designs for websites, apps, and dashboards. Figma files included. Starting from ₹15,000.',
+    title: 'UI/UX Design Agency in India - Website & App Design | LaunchGrids',
+    description: 'Clean, user-friendly UI/UX designs for websites, apps, and dashboards. Figma files included. Starting from Rs.15,000.',
     url: 'https://launchgrids.in/services/ui-ux-design',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'UI/UX Design Agency in India | LaunchGrids',
-    description: 'Clean, user-friendly UI/UX designs for websites and apps. Starting from ₹15,000.',
+    description: 'Clean, user-friendly UI/UX designs for websites and apps. Starting from Rs.15,000.',
     images: ['/logo.png'],
   },
 }
@@ -75,11 +75,11 @@ const service = {
     { title: 'Visual Design', desc: 'We apply brand colors, typography, and visual elements to create final designs.' },
     { title: 'Handoff', desc: 'We deliver design files with developer specs for smooth implementation.' },
   ],
-  whyDesc: 'Good design is not just about looks — it\'s about making your product easy to use and converting visitors into customers.',
+  whyDesc: 'Good design is not just about looks - it\'s about making your product easy to use and converting visitors into customers.',
   benefits: ['User-centered design approach', 'Mobile-first responsive layouts', 'Conversion-optimized page structures', 'Consistent design system', 'Fast delivery in 5-10 days', 'Figma/Adobe XD source files included', 'Developer-ready design handoff', 'Unlimited revisions until satisfied'],
   faqs: [
     { q: 'What tools do you use for UI/UX design?', a: 'We primarily use Figma for all UI/UX design work, delivering source files along with exported assets.' },
-    { q: 'How much does UI/UX design cost?', a: 'Website UI design starts from ₹15,000. App design starts from ₹25,000 depending on number of screens.' },
+    { q: 'How much does UI/UX design cost?', a: 'Website UI design starts from Rs.15,000. App design starts from Rs.25,000 depending on number of screens.' },
     { q: 'Do you also develop the designs?', a: 'Yes, we offer complete design + development packages. We can build exactly what we design.' },
     { q: 'Will I get the source files?', a: 'Yes, you receive all Figma source files along with exported PNG/SVG assets.' },
   ],

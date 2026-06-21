@@ -76,7 +76,7 @@ export default function Footer() {
         </div>
 
         <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/30">© {new Date().getFullYear()} LaunchGrids. All rights reserved.</p>
+          <p className="text-xs text-white/30">(c) {new Date().getFullYear()} LaunchGrids. All rights reserved.</p>
           <a href="https://launchgrids.in" className="text-xs text-white/30 hover:text-white transition-colors">launchgrids.in</a>
         </div>
       </div>

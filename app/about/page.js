@@ -7,29 +7,29 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'About LaunchGrids — Complete Digital Business Setup Agency India',
-  description: 'LaunchGrids is India\'s complete digital business setup agency. We help small businesses, startups, and ecommerce brands build their complete online presence — website, branding, marketing, and automation.',
+  title: 'About LaunchGrids - Complete Digital Business Setup Agency India',
+  description: 'LaunchGrids is India\'s complete digital business setup agency. We help small businesses, startups, and ecommerce brands build their complete online presence - website, branding, marketing, and automation.',
   keywords: ['about LaunchGrids', 'digital agency India', 'LaunchGrids team', 'best digital agency India', 'complete digital setup agency India', 'digital business setup India', 'who is LaunchGrids', 'LaunchGrids about'],
   alternates: { canonical: 'https://launchgrids.in/about' },
   openGraph: {
-    title: 'About LaunchGrids — Digital Business Setup Agency India',
-    description: 'We help businesses build complete online presence — website, branding, marketing & automation.',
+    title: 'About LaunchGrids - Digital Business Setup Agency India',
+    description: 'We help businesses build complete online presence - website, branding, marketing & automation.',
     url: 'https://launchgrids.in/about',
     images: [{ url: '/logo.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About LaunchGrids — Digital Business Setup Agency India',
-    description: 'We help businesses build complete online presence — website, branding, marketing & automation.',
+    title: 'About LaunchGrids - Digital Business Setup Agency India',
+    description: 'We help businesses build complete online presence - website, branding, marketing & automation.',
     images: ['/logo.png'],
   },
 }
 
 const values = [
-  { title: 'Complete Setup', desc: 'We handle everything — website, branding, marketing, and automation in one place.' },
+  { title: 'Complete Setup', desc: 'We handle everything - website, branding, marketing, and automation in one place.' },
   { title: 'Results Focused', desc: 'We build systems that generate leads and grow revenue, not just pretty websites.' },
   { title: 'Transparent Pricing', desc: 'No hidden charges. Clear pricing with detailed scope of work before we start.' },
-  { title: 'Long-Term Partner', desc: 'We\'re with you after launch — maintenance, updates, and growth support.' },
+  { title: 'Long-Term Partner', desc: 'We\'re with you after launch - maintenance, updates, and growth support.' },
 ]
 
 export default function AboutPage() {
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 India's Complete <span className="gradient-text">Digital Business Setup</span> Agency
               </h1>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-                LaunchGrids was built with one mission — to help Indian businesses launch and grow online without the hassle of managing multiple freelancers and agencies.
+                LaunchGrids was built with one mission - to help Indian businesses launch and grow online without the hassle of managing multiple freelancers and agencies.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a href="/contact" className="btn-primary shadow-lg shadow-blue-200 dark:shadow-blue-900/30">
@@ -70,13 +70,13 @@ export default function AboutPage() {
                   We Don't Just Build Websites. <span className="gradient-text">We Build Businesses.</span>
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                  Most businesses struggle online because they hire different people for website, design, marketing, content, and automation — with no coordination and no clear strategy.
+                  Most businesses struggle online because they hire different people for website, design, marketing, content, and automation - with no coordination and no clear strategy.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-                  LaunchGrids solves this by providing everything under one roof — one team, one strategy, one goal: growing your business online.
+                  LaunchGrids solves this by providing everything under one roof - one team, one strategy, one goal: growing your business online.
                 </p>
                 <div className="space-y-3">
-                  {['35+ digital services under one roof', 'Serving businesses across all of India', 'From ₹25,000 local setups to ₹10L+ enterprise projects', 'Long-term support and maintenance included'].map((p) => (
+                  {['35+ digital services under one roof', 'Serving businesses across all of India', 'From Rs.25,000 local setups to Rs.10L+ enterprise projects', 'Long-term support and maintenance included'].map((p) => (
                     <div key={p} className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-brand-blue flex-shrink-0" />
                       <span className="text-sm text-gray-700 dark:text-gray-300">{p}</span>

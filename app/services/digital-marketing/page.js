@@ -3,7 +3,7 @@ import { Megaphone, TrendingUp, Users, BarChart3, Instagram, Facebook, Target, M
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Digital Marketing Agency in India — Social Media, Ads & Growth | LaunchGrids',
+  title: 'Digital Marketing Agency in India - Social Media, Ads & Growth | LaunchGrids',
   description: 'LaunchGrids is a top digital marketing agency in India. We offer social media marketing, Google Ads, Meta Ads, Instagram marketing, lead generation, and complete online growth solutions for businesses.',
   keywords: ['digital marketing agency India', 'best digital marketing agency India', 'social media marketing India', 'Instagram marketing agency India', 'Facebook marketing India', 'online marketing agency India', 'performance marketing India', 'lead generation agency India'],
   alternates: { canonical: 'https://launchgrids.in/services/digital-marketing' },
@@ -49,7 +49,7 @@ const service = {
   iconColor: 'text-orange-600 dark:text-orange-400',
   heroTitle: 'Grow Your Business with',
   heroHighlight: 'Digital Marketing',
-  heroDesc: 'We help businesses across India grow online through data-driven digital marketing — social media, Google Ads, Meta Ads, content marketing, and lead generation systems that deliver real results.',
+  heroDesc: 'We help businesses across India grow online through data-driven digital marketing - social media, Google Ads, Meta Ads, content marketing, and lead generation systems that deliver real results.',
   heroPoints: ['Social Media Marketing', 'Google & Meta Ads', 'Lead Generation', 'Brand Awareness'],
   stats: [
     { value: '3x', label: 'Average ROI' },
@@ -84,7 +84,7 @@ const service = {
     'Transparent pricing with no hidden charges',
   ],
   faqs: [
-    { q: 'How much should I spend on digital marketing?', a: 'We recommend starting with ₹10,000-₹20,000/month for ads. Our management fee starts from ₹8,000/month.' },
+    { q: 'How much should I spend on digital marketing?', a: 'We recommend starting with Rs.10,000-Rs.20,000/month for ads. Our management fee starts from Rs.8,000/month.' },
     { q: 'How quickly will I see results from digital marketing?', a: 'Paid ads (Google/Meta) show results within 1-2 weeks. Social media and SEO take 2-3 months for significant results.' },
     { q: 'Which platform is best for my business?', a: 'It depends on your business type. B2C businesses do well on Instagram and Facebook. B2B businesses benefit more from Google Ads and LinkedIn.' },
     { q: 'Do you create ad creatives?', a: 'Yes, we create ad creatives, copy, and landing pages as part of our digital marketing packages.' },

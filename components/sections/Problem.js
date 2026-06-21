@@ -104,7 +104,7 @@ export default function Problem() {
                 </span>
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                One agency. One clear plan. Complete digital setup — website, branding, marketing, automation, and analytics — all handled by a single expert team.
+                One agency. One clear plan. Complete digital setup - website, branding, marketing, automation, and analytics - all handled by a single expert team.
               </p>
               <div className="mt-4 pt-4 border-t border-brand-blue/10 dark:border-white/5">
                 <p className="text-brand-blue dark:text-blue-400 font-semibold text-sm">

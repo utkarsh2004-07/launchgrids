@@ -134,7 +134,7 @@ export default function Navbar() {
                     </div>
                     <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
                       <span className="text-xs text-gray-500">35+ services to grow your business</span>
-                      <Link href="/services" className="text-xs font-bold text-blue-400 hover:text-white transition-colors">View All Services →</Link>
+                      <Link href="/services" className="text-xs font-bold text-blue-400 hover:text-white transition-colors">View All Services {'->'}</Link>
                     </div>
                   </div>
                 </div>

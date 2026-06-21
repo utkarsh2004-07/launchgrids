@@ -1,7 +1,7 @@
 import { Zap } from 'lucide-react'
 
 export const metadata = {
-  title: 'Refund Policy — LaunchGrids',
+  title: 'Refund Policy - LaunchGrids',
   description: 'Refund Policy for LaunchGrids Digital Agency',
 }
 
@@ -87,7 +87,7 @@ export default function RefundPolicy() {
         <Section title="7. Refund Process">
           <p>If a refund is approved:</p>
           <ul>
-            <li>Refunds will be processed within <strong>7–10 business days</strong></li>
+            <li>Refunds will be processed within <strong>7-10 business days</strong></li>
             <li>Refunds will be issued via the same payment method used for the original payment</li>
             <li>Bank transfer charges (if any) will be deducted from the refund amount</li>
           </ul>

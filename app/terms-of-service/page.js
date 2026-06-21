@@ -1,7 +1,7 @@
 import { Zap } from 'lucide-react'
 
 export const metadata = {
-  title: 'Terms of Service — LaunchGrids',
+  title: 'Terms of Service - LaunchGrids',
   description: 'Terms of Service for LaunchGrids Digital Agency',
 }
 
@@ -30,7 +30,7 @@ export default function TermsOfService() {
       <div className="max-w-3xl mx-auto px-4 py-14 space-y-10">
 
         <Section title="1. Agreement">
-          <p>By engaging LaunchGrids for any service — including website development, branding, digital marketing, SEO, ecommerce, automation, or custom software — you agree to these Terms of Service. These terms form a binding agreement between you (the client) and LaunchGrids.</p>
+          <p>By engaging LaunchGrids for any service - including website development, branding, digital marketing, SEO, ecommerce, automation, or custom software - you agree to these Terms of Service. These terms form a binding agreement between you (the client) and LaunchGrids.</p>
         </Section>
 
         <Section title="2. Our Services">

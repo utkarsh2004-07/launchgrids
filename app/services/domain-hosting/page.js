@@ -3,7 +3,7 @@ import { Globe, Shield, Settings, Zap, Server, Lock } from 'lucide-react'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Domain & Hosting Setup in India — Website Deployment | LaunchGrids',
+  title: 'Domain & Hosting Setup in India - Website Deployment | LaunchGrids',
   description: 'Complete domain registration, hosting setup, SSL certificate, and website deployment services in India. Get your website live with professional server configuration.',
   keywords: ['domain hosting setup India', 'website hosting India', 'SSL certificate setup India', 'domain registration India', 'website deployment India'],
   alternates: { canonical: 'https://launchgrids.in/services/domain-hosting' },
@@ -21,7 +21,7 @@ const service = {
   heroDesc: 'We handle complete domain registration, hosting configuration, SSL setup, DNS management, and website deployment so your site goes live without any technical hassle.',
   heroPoints: ['Domain Registration', 'Hosting Setup', 'SSL Certificate', 'DNS Configuration'],
   stats: [{ value: '200+', label: 'Sites Deployed' }, { value: '99.9%', label: 'Uptime' }, { value: '24hr', label: 'Setup Time' }, { value: 'Free', label: 'SSL Included' }],
-  offerDesc: 'End-to-end domain and hosting setup — from registration to going live.',
+  offerDesc: 'End-to-end domain and hosting setup - from registration to going live.',
   offerings: [
     { icon: <Globe className="w-6 h-6" />, title: 'Domain Registration', desc: 'Register your .in, .com, .co.in domain with the best registrar for your needs.' },
     { icon: <Server className="w-6 h-6" />, title: 'Hosting Configuration', desc: 'Setup and configure hosting on Cloudflare, Vercel, Hostinger, or your preferred provider.' },
@@ -40,7 +40,7 @@ const service = {
   benefits: ['Complete setup from domain to live website', 'Free SSL certificate included', 'Fast loading hosting configuration', 'Professional business email setup', 'DNS management and configuration', '99.9% uptime guarantee', 'Technical support after setup', 'Works with all major hosting providers'],
   faqs: [
     { q: 'Which hosting provider do you recommend?', a: 'For most businesses we recommend Cloudflare Pages (free), Vercel, or Hostinger depending on the website type.' },
-    { q: 'How much does domain and hosting cost?', a: 'Domain costs ₹500-1,500/year. Hosting ranges from free (Cloudflare Pages) to ₹3,000-10,000/year for premium hosting.' },
+    { q: 'How much does domain and hosting cost?', a: 'Domain costs Rs.500-1,500/year. Hosting ranges from free (Cloudflare Pages) to Rs.3,000-10,000/year for premium hosting.' },
     { q: 'Do you provide ongoing hosting management?', a: 'Yes, we offer monthly maintenance plans that include hosting management, renewals, and technical support.' },
     { q: 'Can you migrate my existing website?', a: 'Yes, we can migrate your existing website from any hosting provider to a new one with zero downtime.' },
   ],

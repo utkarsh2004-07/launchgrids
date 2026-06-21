@@ -71,7 +71,7 @@ export default function Process() {
             <span className="gradient-text">Business Online</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            A simple, structured 6-step process from consultation to growth — no confusion, no delays.
+            A simple, structured 6-step process from consultation to growth - no confusion, no delays.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function Process() {
         {/* CTA */}
         <div className="text-center mt-12 reveal">
           <a href="#contact" className="btn-primary mx-auto inline-flex shadow-lg shadow-blue-200 dark:shadow-blue-900/30">
-            Start the Process →
+            Start the Process {'->'}
           </a>
         </div>
       </div>

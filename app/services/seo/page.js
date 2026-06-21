@@ -3,20 +3,20 @@ import { Search, TrendingUp, BarChart3, Globe, FileText, MapPin, Chrome, Shield 
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'SEO Agency in India — Search Engine Optimization Services | LaunchGrids',
+  title: 'SEO Agency in India - Search Engine Optimization Services | LaunchGrids',
   description: 'LaunchGrids provides expert SEO services in India. We help businesses rank on Google\'s first page with on-page SEO, technical SEO, local SEO, and content optimization. Get more organic traffic and leads.',
   keywords: ['SEO agency India', 'SEO services India', 'best SEO agency India', 'affordable SEO India', 'local SEO India', 'Google ranking agency India', 'SEO for small business India', 'search engine optimization India', 'SEO expert India', 'technical SEO India'],
   alternates: { canonical: 'https://launchgrids.in/services/seo' },
   openGraph: {
     title: 'SEO Agency in India | LaunchGrids',
-    description: 'Rank on Google\'s first page with expert SEO services starting from ₹8,000/month.',
+    description: 'Rank on Google\'s first page with expert SEO services starting from Rs.8,000/month.',
     url: 'https://launchgrids.in/services/seo',
     images: [{ url: '/logo.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'SEO Agency in India | LaunchGrids',
-    description: 'Rank on Google first page with expert SEO services starting from ₹8,000/month.',
+    description: 'Rank on Google first page with expert SEO services starting from Rs.8,000/month.',
     images: ['/logo.png'],
   },
 }
@@ -49,7 +49,7 @@ const service = {
   iconColor: 'text-orange-600 dark:text-orange-400',
   heroTitle: 'Rank Higher on Google with',
   heroHighlight: 'Expert SEO Services',
-  heroDesc: 'We help businesses across India rank on Google\'s first page through proven SEO strategies — on-page optimization, technical SEO, local SEO, and content that drives organic traffic.',
+  heroDesc: 'We help businesses across India rank on Google\'s first page through proven SEO strategies - on-page optimization, technical SEO, local SEO, and content that drives organic traffic.',
   heroPoints: ['On-Page SEO', 'Technical SEO', 'Local SEO', 'Content Strategy'],
   stats: [
     { value: '1st', label: 'Page Rankings' },
@@ -85,7 +85,7 @@ const service = {
   ],
   faqs: [
     { q: 'How long does SEO take to show results?', a: 'SEO typically shows results in 3-6 months. Local SEO can show results faster, within 4-8 weeks.' },
-    { q: 'How much do SEO services cost?', a: 'Our SEO packages start from ₹8,000/month. The price depends on the number of keywords and competition level.' },
+    { q: 'How much do SEO services cost?', a: 'Our SEO packages start from Rs.8,000/month. The price depends on the number of keywords and competition level.' },
     { q: 'Do you guarantee first page rankings?', a: 'No ethical SEO agency can guarantee rankings as Google\'s algorithm changes. We guarantee consistent effort and proven strategies that deliver results.' },
     { q: 'What is local SEO?', a: 'Local SEO helps your business appear in Google searches for location-based queries like "salon near me" or "dentist in Mumbai".' },
   ],

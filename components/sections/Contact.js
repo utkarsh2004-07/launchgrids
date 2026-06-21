@@ -1,7 +1,7 @@
-'use client'
+﻿'use client'
 import { useState } from 'react'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
-import { Send, Mail, MapPin, CheckCircle2 } from 'lucide-react'
+import { Send, Mail, MapPin, Phone, CheckCircle2 } from 'lucide-react'
 
 const businessTypes = [
   'Local Business (Salon, Cafe, Shop, Clinic)',
@@ -29,10 +29,10 @@ const serviceOptions = [
 ]
 
 const budgets = [
-  '₹25,000 – ₹50,000',
-  '₹60,000 – ₹1,20,000',
-  '₹1,50,000 – ₹3,00,000',
-  '₹3,00,000+',
+  'Rs.25,000 - Rs.50,000',
+  'Rs.60,000 - Rs.1,20,000',
+  'Rs.1,50,000 - Rs.3,00,000',
+  'Rs.3,00,000+',
 ]
 
 export default function Contact() {
@@ -65,7 +65,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const msg = `Hi LaunchGrids! 👋
+    const msg = `Hi LaunchGrids!
 Name: ${form.name}
 Business: ${form.business}
 Phone: ${form.phone}
@@ -101,8 +101,9 @@ Msg: ${form.message.slice(0,100) || '-'}`
           {/* Left info panel */}
           <div className="lg:col-span-2 reveal reveal-delay-1 space-y-6">
             {[
-            { icon: <Mail className="w-5 h-5" />, label: 'Email', val: 'hello@launchgrids.in', color: 'violet' },
-              { icon: <MapPin className="w-5 h-5" />, label: 'Location', val: 'India (Remote & On-site)', color: 'green' },
+              { icon: <Phone className="w-5 h-5" />, label: 'Phone / WhatsApp', val: '+91 84592 25202', color: 'blue' },
+              { icon: <Mail className="w-5 h-5" />, label: 'Email', val: 'hello@launchgrids.in', color: 'violet' },
+              { icon: <MapPin className="w-5 h-5" />, label: 'Service Area', val: 'Mumbai, Maharashtra & all India', color: 'green' },
             ].map(item => (
               <div key={item.label} className="card-base bg-white dark:bg-[#12103A] p-5 flex items-start gap-4">
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${
@@ -129,7 +130,7 @@ Msg: ${form.message.slice(0,100) || '-'}`
               </h4>
               <div className="space-y-1.5">
                 {[
-                  { day: 'Monday – Saturday', time: '9:00 AM – 7:00 PM' },
+                  { day: 'Monday - Saturday', time: '9:00 AM - 7:00 PM' },
                   { day: 'Sunday', time: 'Emergency Support Only' },
                 ].map(h => (
                   <div key={h.day} className="flex justify-between text-xs">

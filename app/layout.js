@@ -3,10 +3,10 @@ import './globals.css'
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
   title: {
-    default: 'LaunchGrids — Digital Business Setup Agency in Mumbai, India',
+    default: 'LaunchGrids - Digital Business Setup Agency in Mumbai, India',
     template: '%s | LaunchGrids',
   },
-  description: 'LaunchGrids is a complete digital business setup agency in Mumbai, India. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems. Starting from ₹25,000.',
+  description: 'LaunchGrids is a complete digital business setup agency in Mumbai, India. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems. Starting from Rs.25,000.',
   keywords: [
     'digital agency Mumbai',
     'website development agency Mumbai',
@@ -22,6 +22,17 @@ export const metadata = {
   authors: [{ name: 'LaunchGrids', url: 'https://launchgrids.in' }],
   creator: 'LaunchGrids',
   publisher: 'LaunchGrids',
+  applicationName: 'LaunchGrids',
+  category: 'Digital Agency',
+  manifest: '/site.webmanifest',
+  icons: {
+    icon: [
+      { url: '/logo.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/logo.png', type: 'image/png' },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
@@ -39,8 +50,8 @@ export const metadata = {
   openGraph: {
     type: 'website',
     url: 'https://launchgrids.in',
-    title: 'LaunchGrids — Complete Digital Business Setup Agency in India',
-    description: 'Website, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems — complete digital setup starting from ₹25,000.',
+    title: 'LaunchGrids - Complete Digital Business Setup Agency in India',
+    description: 'Website, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems - complete digital setup starting from Rs.25,000.',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
     images: [{
@@ -52,8 +63,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LaunchGrids — Complete Digital Business Setup Agency in India',
-    description: 'Website, branding, SEO, digital marketing, automation & ecommerce — all in one place. Starting from ₹25,000.',
+    title: 'LaunchGrids - Complete Digital Business Setup Agency in India',
+    description: 'Website, branding, SEO, digital marketing, automation & ecommerce - all in one place. Starting from Rs.25,000.',
     images: ['/logo.png'],
   },
   verification: {

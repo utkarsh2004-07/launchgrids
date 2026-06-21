@@ -3,13 +3,13 @@ import { Users, Settings, TrendingUp, BarChart3, Zap, Bell } from 'lucide-react'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'CRM Setup Agency in India — Customer Management System | LaunchGrids',
-  description: 'Professional CRM setup for businesses in India. Manage leads, contacts, and sales pipeline with HubSpot, Zoho, or custom CRM. Automated follow-ups and sales reports included. Starting from ₹10,000.',
+  title: 'CRM Setup Agency in India - Customer Management System | LaunchGrids',
+  description: 'Professional CRM setup for businesses in India. Manage leads, contacts, and sales pipeline with HubSpot, Zoho, or custom CRM. Automated follow-ups and sales reports included. Starting from Rs.10,000.',
   keywords: ['CRM setup India', 'customer management system India', 'CRM for small business India', 'sales CRM India', 'lead management India', 'HubSpot setup India', 'Zoho CRM India', 'CRM agency India', 'sales pipeline management India'],
   alternates: { canonical: 'https://launchgrids.in/services/crm-setup' },
   openGraph: {
-    title: 'CRM Setup Agency in India — Customer Management System | LaunchGrids',
-    description: 'Professional CRM setup to manage leads, contacts, and sales pipeline. Starting from ₹10,000.',
+    title: 'CRM Setup Agency in India - Customer Management System | LaunchGrids',
+    description: 'Professional CRM setup to manage leads, contacts, and sales pipeline. Starting from Rs.10,000.',
     url: 'https://launchgrids.in/services/crm-setup',
     siteName: 'LaunchGrids',
     locale: 'en_IN',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CRM Setup Agency in India | LaunchGrids',
-    description: 'Professional CRM setup to manage leads, contacts, and sales pipeline. Starting from ₹10,000.',
+    description: 'Professional CRM setup to manage leads, contacts, and sales pipeline. Starting from Rs.10,000.',
     images: ['/logo.png'],
   },
 }
@@ -76,10 +76,10 @@ const service = {
     { title: 'Training', desc: 'We train your team on using the CRM effectively.' },
   ],
   whyDesc: 'A CRM system helps you track every lead, follow up on time, and close more deals consistently.',
-  benefits: ['Never lose a lead again', 'Track entire sales pipeline visually', 'Automated follow-up reminders', 'Complete customer history', 'Team collaboration features', 'Integration with website and WhatsApp', 'Sales performance reports', 'Starting from ₹10,000'],
+  benefits: ['Never lose a lead again', 'Track entire sales pipeline visually', 'Automated follow-up reminders', 'Complete customer history', 'Team collaboration features', 'Integration with website and WhatsApp', 'Sales performance reports', 'Starting from Rs.10,000'],
   faqs: [
     { q: 'Which CRM do you set up?', a: 'We work with HubSpot (free), Zoho CRM, Freshsales, and custom spreadsheet-based CRM depending on your budget.' },
-    { q: 'How much does CRM setup cost?', a: 'CRM setup starts from ₹10,000. The CRM software itself may be free (HubSpot) or paid depending on your choice.' },
+    { q: 'How much does CRM setup cost?', a: 'CRM setup starts from Rs.10,000. The CRM software itself may be free (HubSpot) or paid depending on your choice.' },
     { q: 'Can small businesses use a CRM?', a: 'Absolutely. Even a 1-person business benefits from CRM to track leads and follow-ups systematically.' },
     { q: 'Can you integrate CRM with our website?', a: 'Yes, we connect your website contact forms to automatically create leads in your CRM.' },
   ],

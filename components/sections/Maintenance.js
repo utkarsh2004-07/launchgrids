@@ -6,7 +6,7 @@ const plans = [
   {
     icon: <Wrench className="w-6 h-6" />,
     name: 'Basic Maintenance',
-    price: '₹5,000 – ₹10,000',
+    price: 'Rs.5,000 - Rs.10,000',
     period: '/month',
     desc: 'Essential upkeep to keep your website secure, updated, and running smoothly.',
     gradient: 'from-gray-500 to-slate-500',
@@ -22,7 +22,7 @@ const plans = [
   {
     icon: <TrendingUp className="w-6 h-6" />,
     name: 'Growth Maintenance',
-    price: '₹15,000 – ₹30,000',
+    price: 'Rs.15,000 - Rs.30,000',
     period: '/month',
     desc: 'Active management to keep your website growing with SEO and social updates.',
     gradient: 'from-brand-blue to-brand-violet',
@@ -40,9 +40,9 @@ const plans = [
   {
     icon: <Rocket className="w-6 h-6" />,
     name: 'Premium Growth Management',
-    price: '₹40,000 – ₹1,00,000+',
+    price: 'Rs.40,000 - Rs.1,00,000+',
     period: '/month',
-    desc: 'Full-scale digital management — marketing, ads, content, and growth strategy.',
+    desc: 'Full-scale digital management - marketing, ads, content, and growth strategy.',
     gradient: 'from-violet-600 to-purple-700',
     color: 'violet',
     features: [

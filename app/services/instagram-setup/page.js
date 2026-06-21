@@ -4,7 +4,7 @@ import { Instagram, Eye, Star, Users, Layout, Zap } from 'lucide-react'
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
   title: 'Instagram Page Setup & Management in India | LaunchGrids',
-  description: 'Professional Instagram business page setup in India. Bio optimization, highlights, profile strategy, and complete Instagram presence setup for businesses. Starting from ₹3,000.',
+  description: 'Professional Instagram business page setup in India. Bio optimization, highlights, profile strategy, and complete Instagram presence setup for businesses. Starting from Rs.3,000.',
   keywords: ['Instagram page setup India', 'Instagram business profile India', 'Instagram marketing India', 'Instagram setup agency India'],
   alternates: { canonical: 'https://launchgrids.in/services/instagram-setup' },
   openGraph: { title: 'Instagram Page Setup India | LaunchGrids', url: 'https://launchgrids.in/services/instagram-setup', images: [{ url: '/logo.png' }] },
@@ -37,7 +37,7 @@ const service = {
     { title: 'Strategy Handoff', desc: 'We provide a content strategy guide for consistent posting and growth.' },
   ],
   whyDesc: 'A professional Instagram profile builds credibility and makes your business look trustworthy to potential customers.',
-  benefits: ['Professional business account setup', 'SEO-optimized bio for discoverability', 'Branded highlight covers', 'Link in bio setup for traffic', 'Content strategy included', 'Fast 2-day setup', 'Works for all business types', 'Affordable starting from ₹3,000'],
+  benefits: ['Professional business account setup', 'SEO-optimized bio for discoverability', 'Branded highlight covers', 'Link in bio setup for traffic', 'Content strategy included', 'Fast 2-day setup', 'Works for all business types', 'Affordable starting from Rs.3,000'],
   faqs: [
     { q: 'Do I need a business account?', a: 'Yes, Instagram Business account gives you access to analytics, contact buttons, ads, and shopping features.' },
     { q: 'What is included in the setup?', a: 'Profile optimization, bio writing, highlight covers, link in bio setup, and a basic content strategy guide.' },

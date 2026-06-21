@@ -145,7 +145,7 @@ export default function MarketingComparison() {
 
         <div className="text-center mt-8 reveal">
           <p className="text-gray-500 dark:text-gray-500 text-sm italic">
-            LaunchGrids offers both — because your business deserves complete growth, not just online visibility.
+            LaunchGrids offers both - because your business deserves complete growth, not just online visibility.
           </p>
         </div>
       </div>

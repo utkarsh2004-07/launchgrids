@@ -20,6 +20,7 @@ const projects = [
     category: 'Corporate Website',
     catColor: 'blue',
     desc: 'A professional business website designed to present the brand, services, and online presence in a clean and structured way.',
+    results: ['Corporate service structure', 'Mobile-first pages', 'Clear enquiry paths'],
     status: 'live',
     preview: { bg: 'from-blue-600 to-cyan-600', icon: '🏢' },
   },
@@ -30,6 +31,7 @@ const projects = [
     category: 'Ecommerce Store',
     catColor: 'violet',
     desc: 'A fully functional ecommerce store with product listings, cart system, payment gateway, and a seamless shopping experience.',
+    results: ['Product catalogue flow', 'Checkout-ready structure', 'Customer-friendly navigation'],
     status: 'live',
     preview: { bg: 'from-violet-600 to-purple-600', icon: '🛍️' },
   },
@@ -39,7 +41,8 @@ const projects = [
     href: 'https://launchgrids.in',
     category: 'Agency Website',
     catColor: 'blue',
-    desc: 'Our own agency website — built to showcase services, packages, portfolio, and help businesses launch their complete digital presence.',
+    desc: 'Our own agency website - built to showcase services, packages, portfolio, and help businesses launch their complete digital presence.',
+    results: ['35+ service landing paths', 'SEO metadata coverage', 'Lead-focused contact flow'],
     status: 'live',
     preview: { bg: 'from-blue-600 to-violet-600', icon: '⚡' },
   },
@@ -50,6 +53,7 @@ const projects = [
     category: 'Ecommerce Website',
     catColor: 'orange',
     desc: 'An ecommerce project featuring online store, product listings, cart system, payment gateway, and complete ordering flow.',
+    results: ['Store architecture', 'Product discovery planning', 'Order flow design'],
     status: 'coming',
     preview: { bg: 'from-orange-500 to-red-500', icon: '🛒' },
   },
@@ -60,7 +64,8 @@ const projects = [
     category: 'Custom Software',
     catColor: 'green',
     isLiftDisplay: true,
-    desc: 'Professional elevator LCD display system — real-time floor numbers, direction arrows, UDP multicast video, RS-232 serial integration, and cloud monitoring.',
+    desc: 'Professional elevator LCD display system - real-time floor numbers, direction arrows, UDP multicast video, RS-232 serial integration, and cloud monitoring.',
+    results: ['RS-232 hardware integration', 'Live screen monitoring', 'Auto-recovery watchdog'],
     status: 'built',
     preview: { bg: 'from-green-600 to-teal-600', icon: '🏢' },
   },
@@ -70,7 +75,8 @@ const projects = [
     href: null,
     category: 'Startup Website',
     catColor: 'pink',
-    desc: 'A startup website with modern design, product showcase, pricing section, onboarding flow, and investor-ready presentation.',
+    desc: 'A startup website with modern design, product showcase, pricing section, and onboarding flow.',
+    results: ['Product story planning', 'Pricing section layout', 'Conversion path mapping'],
     status: 'coming',
     preview: { bg: 'from-pink-500 to-rose-500', icon: '🚀' },
   },
@@ -94,7 +100,7 @@ const imageCaptions = [
 
 const fileTree = [
   { name: 'LiftDisplay/', type: 'dir', depth: 0 },
-  { name: 'main', type: 'file', depth: 1, desc: 'Entry point — launches the display window' },
+  { name: 'main', type: 'file', depth: 1, desc: 'Entry point - launches the display window' },
   { name: 'config', type: 'file', depth: 1, desc: 'Reads & parses config.ini settings' },
   { name: 'sample', type: 'file', depth: 1, desc: 'Sample config.ini with all options' },
   { name: 'serial_reader', type: 'file', depth: 1, desc: 'RS-232 serial port listener thread' },
@@ -149,7 +155,7 @@ function LiftDisplayModal({ onClose }) {
         {/* 2. Overview */}
         <div className="px-6 pt-5 pb-4">
           <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-            LiftDisplay is a professional elevator display software for LCD screens inside elevator cabins. It shows real-time floor numbers, direction arrows, scrolling announcements, and plays background video — all configurable through a single{' '}
+            LiftDisplay is a professional elevator display software for LCD screens inside elevator cabins. It shows real-time floor numbers, direction arrows, scrolling announcements, and plays background video - all configurable through a single{' '}
             <code className="bg-gray-100 dark:bg-white/10 px-1.5 py-0.5 rounded text-xs font-mono">config.ini</code> file.
             Runs as a standalone <code className="bg-gray-100 dark:bg-white/10 px-1.5 py-0.5 rounded text-xs font-mono">.exe</code> on Windows 7 / 10 / 11 and Linux.
           </p>
@@ -234,13 +240,13 @@ function LiftDisplayModal({ onClose }) {
 
               {/* Config snippet */}
               <div className="bg-black/50 rounded-xl px-4 py-3 border border-white/8">
-                <p className="text-gray-500 text-[10px] font-mono mb-1.5 uppercase tracking-wider"># config.ini — just paste the YouTube Live URL</p>
+                <p className="text-gray-500 text-[10px] font-mono mb-1.5 uppercase tracking-wider"># config.ini - just paste the YouTube Live URL</p>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-500 font-mono text-xs">video_source</span>
                   <span className="text-gray-600 font-mono text-xs">=</span>
                   <span className="text-green-400 font-mono text-xs truncate">https://www.youtube.com/watch?v=<span className="text-yellow-400">LIVE_STREAM_ID</span></span>
                 </div>
-                <p className="text-gray-600 text-[10px] mt-2">✦ Works with YouTube Live · HLS · RTMP · Local MP4 · UDP Multicast</p>
+                <p className="text-gray-600 text-[10px] mt-2">✦ Works with YouTube Live  -  HLS  -  RTMP  -  Local MP4  -  UDP Multicast</p>
               </div>
             </div>
           </div>
@@ -251,12 +257,12 @@ function LiftDisplayModal({ onClose }) {
           <h3 className="text-xs font-bold text-gray-900 dark:text-white mb-3 uppercase tracking-wider">Tech Specs</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {[
-              ['Platform', 'Windows 7 / 10 / 11 · Linux'],
+              ['Platform', 'Windows 7 / 10 / 11  -  Linux'],
               ['Video Engine', 'VLC Media Player'],
-              ['Serial', 'RS-232 · 9600 baud · 8N1'],
+              ['Serial', 'RS-232  -  9600 baud  -  8N1'],
               ['Stream', 'UDP Multicast 239.0.1.1:8300'],
               ['Config', 'Single config.ini file'],
-              ['Deployment', 'Standalone .exe · No install'],
+              ['Deployment', 'Standalone .exe  -  No install'],
             ].map(([k, v]) => (
               <div key={k} className="flex flex-col px-3 py-2 rounded-lg bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/8">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 dark:text-gray-500">{k}</span>
@@ -278,7 +284,7 @@ function LiftDisplayModal({ onClose }) {
           </div>
         </div>
 
-        {/* 7. Image Gallery — last */}
+        {/* 7. Image Gallery - last */}
         <div className="px-6 pb-6">
           <h3 className="text-xs font-bold text-gray-900 dark:text-white mb-3 uppercase tracking-wider">Screenshots</h3>
           <div className="relative rounded-xl overflow-hidden bg-gray-900 aspect-video mb-3 group">
@@ -446,6 +452,17 @@ export default function Portfolio() {
 
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">{p.desc}</p>
 
+                {p.results?.length && (
+                  <ul className="space-y-1.5 mb-4">
+                    {p.results.map((result) => (
+                      <li key={result} className="text-xs text-gray-600 dark:text-gray-400 flex items-start gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-brand-blue flex-shrink-0" />
+                        <span>{result}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
                 {p.isLiftDisplay ? (
                   <button
                     onClick={() => setShowModal(true)}
@@ -474,7 +491,7 @@ export default function Portfolio() {
 
         <div className="text-center mt-10 reveal">
           <p className="text-sm text-gray-500 dark:text-gray-500">
-            More projects coming soon — we're always building something great. 🚀
+            More projects coming soon - we're always building something great. 🚀
           </p>
         </div>
       </div>

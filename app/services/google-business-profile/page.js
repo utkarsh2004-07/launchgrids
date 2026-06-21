@@ -3,8 +3,8 @@ import { MapPin, Star, Search, Globe, BarChart3, Users } from 'lucide-react'
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Google Business Profile Setup in India — Local SEO | LaunchGrids',
-  description: 'Professional Google Business Profile setup and optimization for local businesses in India. Appear on Google Search and Maps, get more local customers. Starting from ₹3,000.',
+  title: 'Google Business Profile Setup in India - Local SEO | LaunchGrids',
+  description: 'Professional Google Business Profile setup and optimization for local businesses in India. Appear on Google Search and Maps, get more local customers. Starting from Rs.3,000.',
   keywords: ['Google Business Profile setup India', 'Google My Business India', 'local SEO India', 'Google Maps listing India', 'local business listing India'],
   alternates: { canonical: 'https://launchgrids.in/services/google-business-profile' },
   openGraph: { title: 'Google Business Profile Setup India | LaunchGrids', url: 'https://launchgrids.in/services/google-business-profile', images: [{ url: '/logo.png' }] },

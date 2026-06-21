@@ -3,7 +3,7 @@ import { Search, Target, BarChart3, TrendingUp, DollarSign, Eye, Settings, Zap }
 
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
-  title: 'Google Ads Agency in India — PPC Management Services | LaunchGrids',
+  title: 'Google Ads Agency in India - PPC Management Services | LaunchGrids',
   description: 'LaunchGrids manages Google Ads campaigns for businesses in India. Expert PPC management with keyword research, ad copywriting, bid optimization, and conversion tracking. Get more leads with Google Ads.',
   keywords: ['Google Ads agency India', 'Google Ads management India', 'PPC agency India', 'Google Ads expert India', 'paid search advertising India', 'Google Search Ads India', 'Google Display Ads India', 'PPC management India'],
   alternates: { canonical: 'https://launchgrids.in/services/google-ads' },
@@ -59,9 +59,9 @@ const service = {
     { value: '30%', label: 'Lower Cost Per Lead' },
     { value: '24hr', label: 'Campaign Launch' },
   ],
-  offerDesc: 'Complete Google Ads management — from campaign setup to ongoing optimization for maximum return on ad spend.',
+  offerDesc: 'Complete Google Ads management - from campaign setup to ongoing optimization for maximum return on ad spend.',
   offerings: [
-    { icon: <Search className="w-6 h-6" />, title: 'Google Search Ads', desc: 'Text ads that appear when customers search for your services on Google — highest intent traffic.' },
+    { icon: <Search className="w-6 h-6" />, title: 'Google Search Ads', desc: 'Text ads that appear when customers search for your services on Google - highest intent traffic.' },
     { icon: <Eye className="w-6 h-6" />, title: 'Google Display Ads', desc: 'Visual banner ads across millions of websites to build brand awareness and retarget visitors.' },
     { icon: <Target className="w-6 h-6" />, title: 'Keyword Research & Strategy', desc: 'In-depth keyword research to target the right search terms with optimal bid strategy.' },
     { icon: <BarChart3 className="w-6 h-6" />, title: 'Conversion Tracking Setup', desc: 'Track calls, form submissions, and purchases to measure true campaign ROI.' },
@@ -74,11 +74,11 @@ const service = {
     { title: 'Campaign Launch', desc: 'We write compelling ad copy, set up campaigns, and launch with optimized bidding.' },
     { title: 'Optimize & Report', desc: 'We monitor daily, optimize underperforming ads, and send monthly performance reports.' },
   ],
-  whyDesc: 'Google Ads puts your business in front of customers who are actively searching for what you offer — highest quality leads.',
+  whyDesc: 'Google Ads puts your business in front of customers who are actively searching for what you offer - highest quality leads.',
   benefits: [
     'Appear on Google\'s first page immediately',
     'Target customers actively searching for your services',
-    'Full control over budget — start from ₹5,000/month',
+    'Full control over budget - start from Rs.5,000/month',
     'Detailed conversion tracking for every rupee spent',
     'Continuous optimization to improve ROI over time',
     'Negative keyword management to avoid wasted spend',
@@ -86,7 +86,7 @@ const service = {
     'Transparent reporting with no hidden charges',
   ],
   faqs: [
-    { q: 'How much should I spend on Google Ads?', a: 'We recommend a minimum ad budget of ₹10,000/month. Our management fee starts from ₹5,000/month.' },
+    { q: 'How much should I spend on Google Ads?', a: 'We recommend a minimum ad budget of Rs.10,000/month. Our management fee starts from Rs.5,000/month.' },
     { q: 'How quickly will I see results?', a: 'Google Ads can generate leads within 24-48 hours of campaign launch. Optimization improves results over 2-4 weeks.' },
     { q: 'What is the difference between Google Ads and SEO?', a: 'Google Ads gives immediate results but requires ongoing budget. SEO takes 3-6 months but provides free organic traffic long-term. Both work best together.' },
     { q: 'Do you manage the ad budget directly?', a: 'No, you maintain full control of your Google Ads account and budget. We manage the campaigns on your behalf.' },

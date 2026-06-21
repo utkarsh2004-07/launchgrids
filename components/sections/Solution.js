@@ -128,7 +128,7 @@ export default function Solution() {
         {/* Bottom tagline */}
         <div className="text-center mt-12 reveal">
           <p className="text-gray-500 dark:text-gray-500 text-sm">
-            "From idea to online launch — we handle the complete digital setup."
+            "From idea to online launch - we handle the complete digital setup."
           </p>
         </div>
       </div>

@@ -92,7 +92,7 @@ export default function Hero() {
 
             {/* Sub */}
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-xl">
-              LaunchGrids helps businesses build websites, branding, marketing systems, automation, ecommerce platforms, and digital growth solutions — all in one place.
+              LaunchGrids helps businesses build websites, branding, marketing systems, automation, ecommerce platforms, and digital growth solutions - all in one place.
             </p>
 
             {/* Checklist */}
@@ -182,7 +182,7 @@ export default function Hero() {
                     {[
                       { label: 'Visitors', val: '12.4K', color: 'text-brand-blue' },
                       { label: 'Leads', val: '1,240', color: 'text-green-600' },
-                      { label: 'Revenue', val: '₹4.2L', color: 'text-violet-600' },
+                      { label: 'Revenue', val: 'Rs.4.2L', color: 'text-violet-600' },
                     ].map(s => (
                       <div key={s.label} className="rounded-lg p-3 bg-gray-50 dark:bg-white/5">
                         <div className={`text-base font-bold ${s.color}`} style={{ fontFamily: 'Syne, sans-serif' }}>{s.val}</div>
