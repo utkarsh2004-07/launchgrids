@@ -16,13 +16,47 @@ import CtaSection from '@/components/sections/CtaSection'
 import Contact from '@/components/sections/Contact'
 import Footer from '@/components/Footer'
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'LaunchGrids',
+  image: 'https://launchgrids.in/logo.png',
+  url: 'https://launchgrids.in',
+  email: 'hello@launchgrids.in',
+  description: 'LaunchGrids is a digital business setup agency in Mumbai, India. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce and growth systems.',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Mumbai',
+    addressRegion: 'Maharashtra',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 19.0760,
+    longitude: 72.8777,
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Mumbai' },
+    { '@type': 'City', name: 'Pune' },
+    { '@type': 'City', name: 'Delhi' },
+    { '@type': 'City', name: 'Bangalore' },
+    { '@type': 'State', name: 'Maharashtra' },
+    { '@type': 'Country', name: 'India' },
+  ],
+  priceRange: '₹25,000 - ₹3,00,000+',
+  openingHours: 'Mo-Sa 09:00-19:00',
+  sameAs: ['https://launchgrids.in', 'https://www.linkedin.com/company/122324033'],
+}
+
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'LaunchGrids',
+  legalName: 'LaunchGrids',
+  alternateName: 'LaunchGrids Digital Agency',
   url: 'https://launchgrids.in',
   logo: 'https://launchgrids.in/logo.png',
-  description: 'Complete digital business setup agency in India. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce, and growth systems.',
+  description: 'LaunchGrids is a complete digital business setup agency in Mumbai, India. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce, and growth systems.',
   email: 'hello@launchgrids.in',
   areaServed: 'IN',
   foundingLocation: 'India',
@@ -40,7 +74,7 @@ const websiteSchema = {
   '@type': 'WebSite',
   name: 'LaunchGrids',
   url: 'https://launchgrids.in',
-  description: 'Complete digital business setup agency in India',
+  description: 'Complete digital business setup agency in Mumbai, India',
   potentialAction: {
     '@type': 'SearchAction',
     target: 'https://launchgrids.in/#services',
@@ -55,12 +89,9 @@ const serviceSchema = {
   url: 'https://launchgrids.in',
   logo: 'https://launchgrids.in/logo.png',
   image: 'https://launchgrids.in/logo.png',
-  description: 'Complete digital business setup agency in India offering website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems.',
+  description: 'Complete digital business setup agency in Mumbai, India offering website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems.',
   email: 'hello@launchgrids.in',
-  areaServed: {
-    '@type': 'Country',
-    name: 'India',
-  },
+  areaServed: { '@type': 'Country', name: 'India' },
   priceRange: '₹25,000 - ₹3,00,000+',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -147,6 +178,7 @@ const breadcrumbSchema = {
 export default function Home() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />

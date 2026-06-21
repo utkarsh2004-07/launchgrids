@@ -3,20 +3,20 @@ import './globals.css'
 export const metadata = {
   metadataBase: new URL('https://launchgrids.in'),
   title: {
-    default: 'LaunchGrids — Complete Digital Business Setup Agency in India',
+    default: 'LaunchGrids — Digital Business Setup Agency in Mumbai, India',
     template: '%s | LaunchGrids',
   },
-  description: 'LaunchGrids is India\'s complete digital business setup agency. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems — all in one place. Starting from ₹25,000.',
+  description: 'LaunchGrids is a complete digital business setup agency in Mumbai, India. Website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems. Starting from ₹25,000.',
   keywords: [
-    'digital business setup agency India',
-    'website development agency India',
-    'digital marketing agency India',
-    'SEO agency India',
-    'branding agency India',
-    'WhatsApp automation India',
-    'ecommerce website development India',
-    'Google Ads agency India',
-    'lead generation agency India',
+    'digital agency Mumbai',
+    'website development agency Mumbai',
+    'digital marketing agency Mumbai',
+    'SEO agency Mumbai',
+    'branding agency Mumbai',
+    'WhatsApp automation Mumbai',
+    'ecommerce website Mumbai',
+    'Google Ads agency Mumbai',
+    'lead generation agency Mumbai',
     'LaunchGrids',
   ],
   authors: [{ name: 'LaunchGrids', url: 'https://launchgrids.in' }],
@@ -68,8 +68,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo.png" />
         <meta name="theme-color" content="#2563EB" />
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.placename" content="India" />
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Mumbai" />
+        <meta name="geo.position" content="19.0760;72.8777" />
+        <meta name="ICBM" content="19.0760, 72.8777" />
         <meta name="language" content="English" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
