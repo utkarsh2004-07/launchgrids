@@ -36,7 +36,17 @@ const projects = [
     preview: { bg: 'from-violet-600 to-purple-600', icon: '🛍️' },
   },
   {
-    name: 'LaunchGrids',
+    name: 'Supreme Plus Pest Expert',
+    url: 'supremeplus-pestexpert.com',
+    href: 'https://supremeplus-pestexpert.com',
+    category: 'Service Website',
+    catColor: 'orange',
+    desc: 'A professional pest control service website with service listings, coverage areas, contact flow, and a clean conversion-focused design.',
+    results: ['Service page structure', 'Local area targeting', 'Lead capture contact form'],
+    status: 'live',
+    preview: { bg: 'from-orange-500 to-amber-600', icon: '🐛' },
+  },
+  {
     url: 'launchgrids.in',
     href: 'https://launchgrids.in',
     category: 'Agency Website',
@@ -368,7 +378,7 @@ export default function Portfolio() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p, i) => (
             <div
-              key={p.name}
+              key={`project-${p.name}`}
               className={`reveal reveal-delay-${Math.min(i + 1, 6)} card-base bg-white dark:bg-[#12103A] overflow-hidden group ${p.isLiftDisplay ? 'lg:col-span-1' : ''}`}
             >
               {/* Preview */}
