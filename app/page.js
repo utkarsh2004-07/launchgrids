@@ -7,6 +7,7 @@ import MarketingComparison from '@/components/sections/MarketingComparison'
 import Packages from '@/components/sections/Packages'
 import BusinessTypePricing from '@/components/sections/BusinessTypePricing'
 import Portfolio from '@/components/sections/Portfolio'
+import Testimonials from '@/components/sections/Testimonials'
 import Maintenance from '@/components/sections/Maintenance'
 import AddOns from '@/components/sections/AddOns'
 import Process from '@/components/sections/Process'
@@ -43,7 +44,7 @@ const localBusinessSchema = {
     { '@type': 'State', name: 'Maharashtra' },
     { '@type': 'Country', name: 'India' },
   ],
-  priceRange: 'Rs.25,000 - Rs.3,00,000+',
+  priceRange: 'Rs.15,000 - Rs.3,00,000+',
   openingHours: 'Mo-Sa 09:00-19:00',
   sameAs: ['https://launchgrids.in', 'https://www.linkedin.com/company/122324033'],
 }
@@ -92,7 +93,7 @@ const serviceSchema = {
   description: 'Complete digital business setup agency in Mumbai, India offering website development, branding, SEO, digital marketing, WhatsApp automation, ecommerce & growth systems.',
   email: 'hello@launchgrids.in',
   areaServed: { '@type': 'Country', name: 'India' },
-  priceRange: 'Rs.25,000 - Rs.3,00,000+',
+  priceRange: 'Rs.15,000 - Rs.3,00,000+',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Digital Business Setup Services',
@@ -126,7 +127,7 @@ const faqSchema = {
       name: 'How much does a website cost at LaunchGrids?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'LaunchGrids website packages start from Rs.25,000 for small businesses. The Growth package ranges from Rs.60,000 to Rs.1,20,000 and the Scale package for ecommerce and enterprises starts from Rs.1,50,000.',
+        text: 'LaunchGrids website packages start from Rs.15,000 for small businesses. The Growth package ranges from Rs.40,000 to Rs.1,20,000 and the Scale package for ecommerce and enterprises starts from Rs.80,000.',
       },
     },
     {
@@ -194,6 +195,7 @@ export default function Home() {
         <Packages />
         <BusinessTypePricing />
         <Portfolio />
+        <Testimonials />
         <Maintenance />
         <AddOns />
         <Process />

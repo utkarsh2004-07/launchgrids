@@ -8,6 +8,7 @@ const footerLinks = {
     { label: 'Services', href: '/services' },
     { label: 'Packages', href: '/packages' },
     { label: 'Projects', href: '/portfolio' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '/contact' },
   ],
   Services: [

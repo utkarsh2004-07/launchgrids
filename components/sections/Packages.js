@@ -7,7 +7,7 @@ const packages = [
     icon: <Zap className="w-6 h-6" />,
     name: 'Launch',
     tagline: 'Start your business online',
-    price: 'Rs.25,000 - Rs.50,000',
+    price: 'Rs.15,000 - Rs.50,000',
     bestFor: 'Small businesses, local shops, freelancers, salons, cafes, coaching classes, clinics, and service providers.',
     cta: 'Start Your Business Online',
     popular: false,
@@ -34,7 +34,7 @@ const packages = [
     icon: <TrendingUp className="w-6 h-6" />,
     name: 'Growth',
     tagline: 'Scale your brand presence',
-    price: 'Rs.60,000 - Rs.1,20,000',
+    price: 'Rs.40,000 - Rs.1,20,000',
     bestFor: 'Growing businesses, local brands, consultants, clinics, real estate, restaurants, institutes, service companies, and professionals.',
     cta: 'Grow Your Brand',
     popular: true,
@@ -65,7 +65,7 @@ const packages = [
     icon: <Rocket className="w-6 h-6" />,
     name: 'Scale',
     tagline: 'Complete business growth system',
-    price: 'Rs.1,50,000 - Rs.3,00,000+',
+    price: 'Rs.80,000 - Rs.3,00,000+',
     bestFor: 'Ecommerce businesses, startups, premium brands, online stores, companies, and businesses needing complete digital systems.',
     cta: 'Scale Your Business',
     popular: false,
@@ -201,7 +201,7 @@ export default function Packages() {
                     <div className={`text-xl font-extrabold mb-0.5 ${isPopular ? 'text-white' : c.priceColor}`} style={{ fontFamily: 'Syne, sans-serif' }}>
                       {pkg.price}
                     </div>
-                    <div className={`text-xs ${isPopular ? 'text-white/60' : 'text-gray-500 dark:text-gray-400'}`}>Starting price (customizable)</div>
+                    <div className={`text-xs ${isPopular ? 'text-white/60' : 'text-gray-500 dark:text-gray-400'}`}>Starting price · depends on requirements</div>
                   </div>
 
                   {/* Best for */}
