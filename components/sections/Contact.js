@@ -101,7 +101,7 @@ Msg: ${form.message.slice(0,100) || '-'}`
           {/* Left info panel */}
           <div className="lg:col-span-2 reveal reveal-delay-1 space-y-6">
             {[
-              { icon: <Phone className="w-5 h-5" />, label: 'Phone / WhatsApp', val: '+91 84592 25202', color: 'blue' },
+              { icon: <Phone className="w-5 h-5" />, label: 'Phone / WhatsApp', val: '+91 86238 08507', color: 'blue' },
               { icon: <Mail className="w-5 h-5" />, label: 'Email', val: 'hello@launchgrids.in', color: 'violet' },
               { icon: <MapPin className="w-5 h-5" />, label: 'Service Area', val: 'Mumbai, Maharashtra & all India', color: 'green' },
             ].map(item => (
